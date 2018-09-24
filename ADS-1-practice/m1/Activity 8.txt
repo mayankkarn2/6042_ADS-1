@@ -1,0 +1,1 @@
+Weighted union is the best process because its complexity is log2 N. This takes less time to find and Union two nodes
