@@ -123,7 +123,10 @@ class Percolation {
 
 	public Boolean percolates() {
 		if(size == 1) {
-			return true;
+			if(sites[size] == 1) {
+				return true;
+			}
+			return false;
 		}
 		else {
 			for(int i = 0; i < size; i++) {
