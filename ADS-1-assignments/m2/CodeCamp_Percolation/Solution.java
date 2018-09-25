@@ -31,7 +31,7 @@ class Percolation {
 		}
 	}
 	public void union(int p, int q) {
-		if(q == size) {
+		if(p == size) {
 			id[p] = id[p];
 		}
 		else {
@@ -89,7 +89,7 @@ class Percolation {
 		}
 		//For UpperLeft corner
 		else if(index == 0) {
-			System.out.println("Here");
+			// System.out.println("Here");
 			union(index, index + 1);
 			union(index, index + size);
 		}
@@ -122,12 +122,17 @@ class Percolation {
 	}
 
 	public Boolean percolates() {
-		for(int i = 0; i < size; i++) {
-			union(size * size, i);
-			// System.out.println(Arrays.toString(id));
-			for(int j = ((size*size) - size) - 1; j < size*size; j++) {
-				if(isOpen(j)) {
-					return true;
+		if(size == 1) {
+			return true;
+		}
+		else {
+			for(int i = 0; i < size; i++) {
+				union(size * size, i);
+				// System.out.println(Arrays.toString(id));
+				for(int j = ((size*size) - size) - 1; j < size*size; j++) {
+					if(isOpen(j)) {
+						return true;
+					}
 				}
 			}
 		}
