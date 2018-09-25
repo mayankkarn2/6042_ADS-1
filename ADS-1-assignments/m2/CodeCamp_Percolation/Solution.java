@@ -31,12 +31,17 @@ class Percolation {
 		}
 	}
 	public void union(int p, int q) {
-		int pid = id[p];
-		int qid = id[q];
-		if(isOpen(q)) {
-			for(int i = 0; i < size * size; i++) {
-				if(id[i] == qid) {
-					id[i] = pid;
+		if(q == size) {
+			id[p] = id[p];
+		}
+		else {
+			int pid = id[p];
+			int qid = id[q];
+			if(isOpen(q)) {
+				for(int i = 0; i < size * size; i++) {
+					if(id[i] == qid) {
+						id[i] = pid;
+					}
 				}
 			}
 		}
@@ -65,6 +70,7 @@ class Percolation {
 		//For first column
 		else if((index % size == 0) &&(index>0)&& (index < size*size -size)) {
 			// System.out.println("Hello");
+
 			union(index, index+1);
 			union(index, index + size);
 			union(index, index-size);
@@ -83,6 +89,7 @@ class Percolation {
 		}
 		//For UpperLeft corner
 		else if(index == 0) {
+			System.out.println("Here");
 			union(index, index + 1);
 			union(index, index + size);
 		}
