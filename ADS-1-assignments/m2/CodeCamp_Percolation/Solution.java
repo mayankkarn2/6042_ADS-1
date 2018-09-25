@@ -31,17 +31,12 @@ class Percolation {
 		}
 	}
 	public void union(int p, int q) {
-		if(p == size) {
-			id[p] = id[p];
-		}
-		else {
-			int pid = id[p];
-			int qid = id[q];
-			if(isOpen(q)) {
-				for(int i = 0; i < size * size; i++) {
-					if(id[i] == qid) {
-						id[i] = pid;
-					}
+		int pid = id[p];
+		int qid = id[q];
+		if(isOpen(q)) {
+			for(int i = 0; i < size * size; i++) {
+				if(id[i] == qid) {
+					id[i] = pid;
 				}
 			}
 		}
@@ -122,6 +117,7 @@ class Percolation {
 	}
 
 	public Boolean percolates() {
+		// System.out.println(Arrays.toString(id));
 		if(size == 1) {
 			if(sites[size] == 1) {
 				return true;
