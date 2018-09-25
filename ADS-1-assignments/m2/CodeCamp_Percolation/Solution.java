@@ -133,7 +133,7 @@ class Percolation {
 				union(size * size, i);
 				// System.out.println(Arrays.toString(id));
 				for(int j = ((size*size) - size) - 1; j < size*size; j++) {
-					if(isOpen(j)) {
+					if(isOpen(j) && id[j] == id[i]) {
 						return true;
 					}
 				}
