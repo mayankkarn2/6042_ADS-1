@@ -118,6 +118,16 @@ class Percolation {
 
 	public Boolean percolates() {
 		// System.out.println(Arrays.toString(id));
+		int c = 0;
+		// for(int i = 0; i < size * size; i++) {
+		// 	if(c % size == size - 1) {
+		// 		c = 0;
+		// 		System.out.println(id[i]);
+		// 		System.out.println();
+		// 	}
+		// 	System.out.print(id[i] + " ");
+		// 	c++;
+		// }
 		if(size == 1) {
 			if(sites[size] == 1) {
 				return true;
