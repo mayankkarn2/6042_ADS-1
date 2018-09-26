@@ -1,10 +1,10 @@
 // public class Percolation {
-//    public Percolation(int n)                // create n-by-n grid, with all sites blocked
-//    public    void open(int row, int col)    // open site (row, col) if it is not open already
-//    public boolean isOpen(int row, int col)  // is site (row, col) open?
-//    public boolean isFull(int row, int col)  // is site (row, col) full?
-//    public     int numberOfOpenSites()       // number of open sites
-//    public boolean percolates()              // does the system percolate?
+//    public Percolation(int n)
+//    public    void open(int row, int col)
+//    public boolean isOpen(int row, int col)
+//    public boolean isFull(int row, int col)
+//    public     int numberOfOpenSites()
+//    public boolean percolates()
 // }
 
 
@@ -16,19 +16,19 @@ import java.util.Scanner;
  */
 class Percolation {
     /**
-     * size of grid
+     * size of grid.
      */
-    final int size;
+    private int size;
     /**
-     * sites to store open values
+     * sites to store open values.
      */
     private int[] sites;
     /**
-     * Names of the sites
+     * Names of the sites.
      */
     private int[] id;
     /**
-     * count of the open sites
+     * count of the open sites.
      */
     // private int count = 0;
     /**
@@ -41,12 +41,12 @@ class Percolation {
         sites = new int[n * n + 2];
         id = new int[n * n + 2];
         int count = 1;
-        for(int i = 0; i < size * size + 2; i++) {
+        for (int i = 0; i < size * size + 2; i++) {
             id[i] = count++;
         }
     }
     /**
-     * Unions the two sites if q is open
+     * Unions the two sites if q is open.
      *
      * @param      p     First site
      * @param      q     Second site
@@ -56,7 +56,7 @@ class Percolation {
         int qid = id[q];
         if (isOpen(q)) {
             for (int i = 0; i < size * size; i++) {
-                if(id[i] == qid) {
+                if (id[i] == qid) {
                     id[i] = pid;
                 }
             }
@@ -71,7 +71,7 @@ class Percolation {
      * @return     Returns True or False
      */
     public Boolean connected(final int i, final int j) {
-        return(id[i] == id[j]);
+        return (id[i] == id[j]);
     }
     /**
      * Determines if open.
@@ -86,24 +86,24 @@ class Percolation {
         return sites[index] == 1;
     }
     /**
-     * Opens the site and unions its adjacent sites if open
+     * Opens the site and unions its adjacent sites if open.
      *
      * @param      row   The row
      * @param      col   The col
      */
     public void  open(final int row, final int col) {
-        int index = ((row-1) * size + col) - 1;
+        int index = ((row - 1) * size + col) - 1;
         sites[index] = 1;
-        sites[size*size+1]=1;
-        sites[size*size]=1;
+        sites[size * size + 1] = 1;
+        sites[size * size] = 1;
         //For first row
         if(index > 0 && index < size-1) {
             union(index, index - 1);
-            union(index, index+1);
-            union(index, index+size);
+            union(index, index + 1);
+            union(index, index + size);
         }
         //For first column
-        else if((index % size == 0) &&(index>0)&& (index < size*size -size)) {
+        else if((index % size == 0) &&(index>0) && (index < size * size - size)) {
             // System.out.println("Hello");
 
             union(index, index+1);
@@ -111,7 +111,7 @@ class Percolation {
             union(index, index-size);
         }
         //For Last column
-        else if(index % size == size - 1 && (index>size)&& (index < size*size - 1) ) {
+        else if(index % size == size - 1 && (index > size)&& (index < size * size - 1) ) {
             union(index, index -1);
             union(index, index + size);
             union(index, index - size); 
@@ -140,7 +140,7 @@ class Percolation {
             union(index, index - size);
         }
         //For BottomRight Corner
-        else if(index == (size*size)-1) {
+        else if(index == (size * size) - 1) {
             union(index, index-1);
             union(index, index-size);
         }
@@ -179,11 +179,11 @@ class Percolation {
             return false;
         }
         else {
-            for(int i = 0; i < size; i++) {
+            for (int i = 0; i < size; i++) {
                 union(size * size, i);
                 // System.out.println(Arrays.toString(id));
-                for(int j = ((size*size) - size) - 1; j < size*size; j++) {
-                    if(isOpen(j) && id[j] == id[i]) {
+                for( int j = ((size*size) - size) - 1; j < size*size; j++) {
+                    if (isOpen(j) && id[j] == id[i]) {
                         return true;
                     }
                 }
