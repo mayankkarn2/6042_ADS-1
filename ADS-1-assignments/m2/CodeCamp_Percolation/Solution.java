@@ -187,7 +187,7 @@ class Percolation {
 /**
  * Class for solution.
  */
-final public class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
