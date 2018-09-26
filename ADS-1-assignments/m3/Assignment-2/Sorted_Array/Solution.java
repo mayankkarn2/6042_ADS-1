@@ -7,7 +7,7 @@ class Solution {
 	/**
 	 * Constructs the object.
 	 */
-	Solution() {
+	private Solution() {
 		//Nothing happens here.
 	}
 	/**
@@ -15,7 +15,7 @@ class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		int size1 = s.nextInt();
 		int size2 = s.nextInt();
@@ -43,6 +43,7 @@ class Solution {
 			last[i] = arr2[j];
 		}
 		Arrays.sort(last);
-		System.out.println(Arrays.toString(last).replace("[","").replace("]","").replace(" ",""));
+		System.out.println(Arrays.toString(last)
+			.replace("[", "").replace("]", "").replace(" ", ""));
 	}
 }
