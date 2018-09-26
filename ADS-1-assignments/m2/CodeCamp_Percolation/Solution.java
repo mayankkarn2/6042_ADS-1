@@ -10,7 +10,7 @@
 
 // You can implement the above API to solve the problem
 
-import java.util.Scanner;
+import java.util.*;
 /**
  * Class for percolation.
  */
@@ -174,7 +174,7 @@ class Percolation {
             for (int i = 0; i < size; i++) {
                 union(size * size, i);
                 // System.out.println(Arrays.toString(id));
-                for (int j = ((size * size) - size) - 1; j < size * size; j++) {
+                for (int j = ((size * size) - size); j < size * size; j++) {
                     if (isOpen(j) && id[j] == id[i]) {
                         return true;
                     }
