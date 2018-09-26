@@ -101,37 +101,39 @@ class Percolation {
             union(index, index - 1);
             union(index, index + 1);
             union(index, index + size);
-        } else if ((index % size == 0) &&(index>0) && (index < size * size - size)) {
+        } else if ((index % size == 0) && (index > 0) && 
+            (index < size * size - size)) {
             // System.out.println("Hello");
             //For first column
             union(index, index + 1);
             union(index, index + size);
-            union(index, index-size);
-        } else if(index % size == size - 1 && (index > size)&& (index < size * size - 1) ) {
+            union(index, index - size);
+        } else if (index % size == size - 1 && (index > size) &&
+            (index < size * size - 1)) {
             //For Last column
             union(index, index - 1);
             union(index, index + size);
-            union(index, index - size); 
-        } else if(index > (size * size - size)  && index < (size * size) - 1) {
+            union(index, index - size);
+        } else if (index > (size * size - size)  && index < (size * size) - 1) {
             //For Last row
             union(index, index - size);
             union(index, index - 1);
             union(index, index + 1);
-        } else if(index == 0) {
+        } else if (index == 0) {
             //For UpperLeft corner
             // System.out.println("Here");
             union(index, index + 1);
             union(index, index + size);
-        } else if(index == size - 1) {
+        } else if (index == size - 1) {
             //For UpperRight corner
             union(index, index - 1);
             union(index, index + size);
-        } else if(index == (size * (size - 1))) {
+        } else if (index == (size * (size - 1))) {
             //For BottomLeft Corner
             // System.out.println("Hi");
             union(index, index + 1);
             union(index, index - size);
-        } else if(index == (size * size) - 1) {
+        } else if (index == (size * size) - 1) {
             //For BottomRight Corner
             union(index, index - 1);
             union(index, index - size);
@@ -147,7 +149,7 @@ class Percolation {
         // System.out.println(Arrays.toString(sites));
     }
     /**
-     * Returns True if percolation occurs, else False
+     * Returns True if percolation occurs, else False.
      *
      * @return     Boolean, True or False
      */
@@ -163,8 +165,8 @@ class Percolation {
         //  System.out.print(id[i] + " ");
         //  c++;
         // }
-        if(size == 1) {
-            if(sites[size] == 1) {
+        if (size == 1) {
+            if (sites[size] == 1) {
                 return true;
             }
             return false;
@@ -173,7 +175,7 @@ class Percolation {
             for (int i = 0; i < size; i++) {
                 union(size * size, i);
                 // System.out.println(Arrays.toString(id));
-                for( int j = ((size*size) - size) - 1; j < size*size; j++) {
+                for (int j = ((size*size) - size) - 1; j < size * size; j++) {
                     if (isOpen(j) && id[j] == id[i]) {
                         return true;
                     }
@@ -188,15 +190,18 @@ class Percolation {
  */
 public class Solution {
     /**
-     * The main function
+     * The main function.
      *
      * @param      args  The arguments
      */
+    Solution() {
+        //Nothing happens here.
+    }
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         String grid = s.nextLine();
         Percolation p = new Percolation(Integer.parseInt(grid));
-        while(s.hasNext()) {
+        while (s.hasNext()) {
             String input = s.nextLine();
             String[] val = input.split(" ");
             p.open(Integer.parseInt(val[0]), Integer.parseInt(val[1]));
