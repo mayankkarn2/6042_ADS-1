@@ -10,18 +10,22 @@
 
 // You can implement the above API to solve the problem
 
-import java.util.*;
-
+import java.util.Scanner;
+/**
+ * Class for percolation.
+ */
 class Percolation {
 
 	int size;
 	int[] sites;
 	int[] id;
 	int count = 0;
-	Percolation(){
-
-	}
-	Percolation(int n) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      n     size of the grid
+	 */
+	Percolation(final int n) {
 		size = n;
 		sites = new int[n*n + 2];
 		id = new int[n*n + 2];
@@ -30,7 +34,13 @@ class Percolation {
 			id[i] = count++;
 		}
 	}
-	public void union(int p, int q) {
+	/**
+	 * Unions the two sites if q is open
+	 *
+	 * @param      p     First site
+	 * @param      q     Second site
+	 */
+	public void union(final int p, final int q) {
 		int pid = id[p];
 		int qid = id[q];
 		if(isOpen(q)) {
@@ -41,17 +51,36 @@ class Percolation {
 			}
 		}
 	}
-	public Boolean connected(int i, int j) {
+	/**
+	 * Returns true if their if path between sites.
+	 *
+	 * @param      i     First site
+	 * @param      j     Second site
+	 *
+	 * @return     Returns True or False
+	 */
+	public Boolean connected(final int i, final int j) {
 		return(id[i] == id[j]);
 	}
-
-	public Boolean isOpen(int index) {
+	/**
+	 * Determines if open.
+	 *
+	 * @param      index  The index
+	 *
+	 * @return     True if open, False otherwise.
+	 */
+	public Boolean isOpen(final int index) {
 		// System.out.println(index);
 		// System.out.println(sites[index] == 1);
 		return sites[index] == 1;
 	}
-
-	public void  open(int row, int col) {
+	/**
+	 * Opens the site and unions its adjacent sites if open
+	 *
+	 * @param      row   The row
+	 * @param      col   The col
+	 */
+	public void  open(final int row, final int col) {
 		int index = ((row-1) * size + col) - 1;
 		sites[index] = 1;
 		sites[size*size+1]=1;
@@ -115,7 +144,11 @@ class Percolation {
 		// System.out.println(Arrays.toString(id));
 		// System.out.println(Arrays.toString(sites));
 	}
-
+	/**
+	 * Returns True if percolation occurs, else False
+	 *
+	 * @return     Boolean, True or False
+	 */
 	public Boolean percolates() {
 		// System.out.println(Arrays.toString(id));
 		int c = 0;
@@ -148,9 +181,16 @@ class Percolation {
 		return false;
 	}
 }
-
+/**
+ * Class for solution.
+ */
 public class Solution {
-	public static void main(String[] args) {
+	/**
+	 * The main function
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		String grid = s.nextLine();
 		Percolation p = new Percolation(Integer.parseInt(grid));
