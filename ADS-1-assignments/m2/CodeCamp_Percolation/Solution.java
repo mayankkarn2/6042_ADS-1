@@ -97,54 +97,45 @@ class Percolation {
         sites[size * size + 1] = 1;
         sites[size * size] = 1;
         //For first row
-        if(index > 0 && index < size-1) {
+        if (index > 0 && index < size - 1) {
             union(index, index - 1);
             union(index, index + 1);
             union(index, index + size);
-        }
-        //For first column
-        else if((index % size == 0) &&(index>0) && (index < size * size - size)) {
+        } else if ((index % size == 0) &&(index>0) && (index < size * size - size)) {
             // System.out.println("Hello");
-
-            union(index, index+1);
+            //For first column
+            union(index, index + 1);
             union(index, index + size);
             union(index, index-size);
-        }
-        //For Last column
-        else if(index % size == size - 1 && (index > size)&& (index < size * size - 1) ) {
-            union(index, index -1);
+        } else if(index % size == size - 1 && (index > size)&& (index < size * size - 1) ) {
+            //For Last column
+            union(index, index - 1);
             union(index, index + size);
             union(index, index - size); 
-        }
-        //For Last row
-        else if(index > (size * size - size)  && index < (size * size) - 1) {
+        } else if(index > (size * size - size)  && index < (size * size) - 1) {
+            //For Last row
             union(index, index - size);
             union(index, index - 1);
             union(index, index + 1);
-        }
-        //For UpperLeft corner
-        else if(index == 0) {
+        } else if(index == 0) {
+            //For UpperLeft corner
             // System.out.println("Here");
             union(index, index + 1);
             union(index, index + size);
-        }
-        //For UpperRight corner
-        else if(index == size - 1) {
+        } else if(index == size - 1) {
+            //For UpperRight corner
             union(index, index - 1);
             union(index, index + size);
-        }
-        //For BottomLeft Corner
-        else if(index == (size * (size - 1))) {
+        } else if(index == (size * (size - 1))) {
+            //For BottomLeft Corner
             // System.out.println("Hi");
             union(index, index + 1);
             union(index, index - size);
-        }
-        //For BottomRight Corner
-        else if(index == (size * size) - 1) {
-            union(index, index-1);
-            union(index, index-size);
-        }
-        else {
+        } else if(index == (size * size) - 1) {
+            //For BottomRight Corner
+            union(index, index - 1);
+            union(index, index - size);
+        } else {
             union(index, index - 1);
             union(index, index + 1);
             union(index, index - size);
