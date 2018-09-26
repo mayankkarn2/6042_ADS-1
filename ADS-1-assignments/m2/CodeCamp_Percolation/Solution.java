@@ -10,7 +10,7 @@
 
 // You can implement the above API to solve the problem
 
-import java.util.*;
+import java.util.Scanner;
 /**
  * Class for percolation.
  */
@@ -159,7 +159,7 @@ class Percolation {
         // for(int i = 0; i < size * size; i++) {
         //  if(c % size == size - 1) {
         //      c = 0;
-        //      System.out.println(id[i]);
+        //      System.out.println(id[i]);\
         //      System.out.println();
         //  }
         //  System.out.print(id[i] + " ");
