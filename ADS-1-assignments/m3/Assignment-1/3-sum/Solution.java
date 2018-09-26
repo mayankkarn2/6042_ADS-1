@@ -1,12 +1,25 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for solution.
+ */
 class Solution {
-
-	public static void main(String[] args) {
+	/**
+	 * Constructs the object.
+	 */
+	Solution() {
+		//Nothing happens here.
+	}
+	/**
+	 * The main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		int size = s.nextInt();
 		int[] numbers = new int[size];
-		for(int i = 0; i < size; i++) {
+		for (int i = 0; i < size; i++) {
 			numbers[i] = s.nextInt();
 		}
 		Arrays.sort(numbers);
@@ -24,12 +37,10 @@ class Solution {
                     count++;
                     j++;
                     k--;
-                }
-                else if (numbers[i] + numbers[j] + numbers[k] <    0) {
+                } else if (numbers[i] + numbers[j] + numbers[k] <    0) {
                 	// System.out.println("In j");
                     j++;
-                }
-                else {
+                } else {
                 	// System.out.println("In k");
                     k--;
                 }
