@@ -81,7 +81,7 @@ public class Solution {
 					break;
 				}
 			}
-			if(j == inputs.length()-1 && st.top == -1) {
+			if(j == inputs.length() && st.top == -1) {
 				System.out.println("YES");
 			}
 			else {
