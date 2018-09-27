@@ -78,7 +78,7 @@ public class Solution {
 		while(i < lines) {
 			String inputs = "";
 			int flag = 1;
-			st.top = -1;
+			// st.top = -1;
 			inputs = s.nextLine();
 			// System.out.println(inputs);
 			for(int j = 0; j < inputs.length(); j++) {
