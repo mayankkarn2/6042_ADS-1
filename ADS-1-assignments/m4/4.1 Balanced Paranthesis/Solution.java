@@ -64,7 +64,7 @@ class Stack {
 
 	public void pop() {
 		// System.out.println("h"+data[top]);
-		System.out.println(top);
+		// System.out.println(top);
 		top--;
 	}
 }
