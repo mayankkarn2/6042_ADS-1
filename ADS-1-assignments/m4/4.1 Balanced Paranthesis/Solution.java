@@ -34,15 +34,15 @@ class Stack {
                 top++;
                 data[top] = val;
                 return 1;
-            } 
+            }
             else {
                 return 0;
             }
-        } 
+        }
         switch (val) {
             case "(":
             if (data[top].equals("(") || data[top].equals("[")
-                || data[top].equals("{") ) {
+                || data[top].equals("{")) {
                 top++;
                 data[top] = val;
                 return 1;
@@ -87,7 +87,7 @@ class Stack {
         return 0;
     }
     /**
-     * Pops the element
+     * Pops the element.
      */
     public void pop() {
         top--;
@@ -100,35 +100,42 @@ class Stack {
     public int getTop() {
         return top;
     }
-
+    /**
+     * Sets the top.
+     *
+     * @param      i     given value.
+     */
     public void setTop(int i) {
         top = i;
     }
 }
 public class Solution {
-    public static void main(String[] args) {
+
+    private Solution() {
+        //Nothing happens here.
+    }
+    public static void main(final String[] args) {
         Stack st = new Stack(2000);
         Scanner s = new Scanner(System.in);
         int lines = s.nextInt();
         s.nextLine();
         int i = 0;
-        while(i < lines) {
+        while (i < lines) {
             String inputs = "";
             inputs = s.nextLine();
             int j = 0, f = 0;
             st.setTop(-1);
-            for(j = 0; j < inputs.length(); j++) {
+            for (j = 0; j < inputs.length(); j++) {
                 f = st.push(inputs.charAt(j));
-                if(f == 0) {
+                if (f == 0) {
                     System.out.println("NO");
                     break;
                 }
             }
-            if(f!=0) {
+            if (f!=0) {
                 if(j == inputs.length() && st.getTop() == -1) {
                     System.out.println("YES");
-                }
-                else {
+                } else {
                     System.out.println("NO");   
                 }
             }
