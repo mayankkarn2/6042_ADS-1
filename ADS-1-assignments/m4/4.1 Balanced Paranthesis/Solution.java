@@ -34,8 +34,7 @@ class Stack {
                 top++;
                 data[top] = val;
                 return 1;
-            }
-            else {
+            } else {
                 return 0;
             }
         }
@@ -109,6 +108,9 @@ class Stack {
         top = i;
     }
 }
+/**
+ * Class for Solution.
+ */
 final class Solution {
     /**
      * Constructs the object.
@@ -144,7 +146,7 @@ final class Solution {
                 if (j == inputs.length() && st.getTop() == -1) {
                     System.out.println("YES");
                 } else {
-                    System.out.println("NO");   
+                    System.out.println("NO");
                 }
             }
             i++;
