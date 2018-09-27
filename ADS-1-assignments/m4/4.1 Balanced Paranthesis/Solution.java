@@ -64,6 +64,7 @@ class Stack {
 
 	public void pop() {
 		// System.out.println("h"+data[top]);
+		System.out.println(top);
 		top--;
 	}
 }
@@ -82,6 +83,8 @@ public class Solution {
 			// System.out.println(inputs);
 			for(int j = 0; j < inputs.length(); j++) {
 				int f = st.push(inputs.charAt(j));
+				// System.out.print(":"+(j+2));
+				// System.out.println(st.top);
 				if(f == 0) {
 					System.out.println("NO");
 					break;
@@ -90,9 +93,10 @@ public class Solution {
 					System.out.println("YES");
 					break;
 				}
-				// else {
-				// 	System.out.println("NO");
-				// }
+				else {
+					System.out.println("NO");
+					break;
+				}
 			}
 			i++;
 		}
