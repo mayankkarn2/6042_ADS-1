@@ -13,6 +13,7 @@ class Stack {
 				return 1;
 			} 
 			else {
+				// System.out.println("hi");
 				return 0;
 			}
 		} 
@@ -84,7 +85,7 @@ public class Solution {
 					System.out.println("NO");
 					break;
 				}
-				if(j == inputs.length()-1) {
+				if(j == inputs.length()-1 && st.top == -1) {
 					System.out.println("YES");
 				}
 			}
