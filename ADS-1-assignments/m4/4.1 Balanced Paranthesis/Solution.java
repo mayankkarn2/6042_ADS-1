@@ -93,10 +93,6 @@ public class Solution {
 					System.out.println("YES");
 					break;
 				}
-				else {
-					System.out.println("NO");
-					break;
-				}
 			}
 			i++;
 		}
