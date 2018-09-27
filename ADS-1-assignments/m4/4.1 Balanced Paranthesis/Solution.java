@@ -4,7 +4,6 @@ class Stack {
 	String[] data = new String[2000];
 	int top = -1;
 	public int push(char input) {
-		// System.out.println("i:"+input);
 		String val = Character.toString(input);
 		if(top == -1) {
 			if(val.equals("(") || val.equals("[") || val.equals("{")) {
@@ -13,7 +12,6 @@ class Stack {
 				return 1;
 			} 
 			else {
-				// System.out.println("hi");
 				return 0;
 			}
 		} 
@@ -39,7 +37,6 @@ class Stack {
 			}
 			return 0;
 			case "]":
-			// System.out.println("here");
 			if(data[top].equals("[")) {
 				pop();
 				return 1;
@@ -63,8 +60,6 @@ class Stack {
 	}
 
 	public void pop() {
-		// System.out.println("h"+data[top]);
-		// System.out.println(top);
 		top--;
 	}
 }
@@ -77,25 +72,19 @@ public class Solution {
 		int i = 0;
 		while(i < lines) {
 			String inputs = "";
-			int flag = 1;
-			// st.top = -1;
 			inputs = s.nextLine();
-			// System.out.println(inputs);
 			for(int j = 0; j < inputs.length(); j++) {
 				int f = st.push(inputs.charAt(j));
-				// System.out.print(":"+(j+2));
-				// System.out.println(st.top);
 				if(f == 0) {
 					System.out.println("NO");
 					break;
 				}
-				if(j == inputs.length()-1 && st.top == 0) {
+				if(j == inputs.length()-1) {
 					System.out.println("YES");
 					break;
 				}
 			}
 			i++;
 		}
-		i = 0;
 	}
 }
