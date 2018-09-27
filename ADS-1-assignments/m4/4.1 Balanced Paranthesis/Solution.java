@@ -80,14 +80,8 @@ public class Solution {
 					break;
 				}
 				if(j == inputs.length()-1) {
-					if(st.top == 0) {
-						System.out.println("YES");
-						break;
-					}
-					else {
-						System.out.println("NO");
-						break;
-					}
+					System.out.println("YES");
+					break;
 				}
 			}
 			i++;
