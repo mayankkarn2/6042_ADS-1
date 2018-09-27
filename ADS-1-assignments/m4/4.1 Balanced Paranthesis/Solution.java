@@ -73,16 +73,19 @@ public class Solution {
 		while(i < lines) {
 			String inputs = "";
 			inputs = s.nextLine();
-			for(int j = 0; j < inputs.length(); j++) {
+			int j = 0;
+			for(j = 0; j < inputs.length(); j++) {
 				int f = st.push(inputs.charAt(j));
 				if(f == 0) {
 					System.out.println("NO");
 					break;
 				}
-				if(j == inputs.length()-1) {
-					System.out.println("YES");
-					break;
-				}
+			}
+			if(j == inputs.length()-1 && st.top == 0) {
+				System.out.println("YES");
+			}
+			else {
+				System.out.println("NO");	
 			}
 			i++;
 		}
