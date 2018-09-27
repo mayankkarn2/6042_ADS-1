@@ -16,7 +16,7 @@ class Stack {
      *
      * @param      size  The size of Stack
      */
-    Stack(int size) {
+    Stack(final int size) {
         data = new String[size];
         top = -1;
     }
@@ -27,10 +27,10 @@ class Stack {
      *
      * @return     1 if input is valid, else false
      */
-    public int push(char input) {
+    public int push(final char input) {
         String val = Character.toString(input);
-        if(top == -1) {
-            if(val.equals("(") || val.equals("[") || val.equals("{")) {
+        if (top == -1) {
+            if (val.equals("(") || val.equals("[") || val.equals("{")) {
                 top++;
                 data[top] = val;
                 return 1;
@@ -39,46 +39,50 @@ class Stack {
                 return 0;
             }
         } 
-        switch(val) {
+        switch (val) {
             case "(":
-            if(data[top].equals("(") || data[top].equals("[") || data[top].equals("{") ) {
+            if (data[top].equals("(") || data[top].equals("[")
+                || data[top].equals("{") ) {
                 top++;
                 data[top] = val;
                 return 1;
             }
             return 0;
             case ")":
-            if(data[top].equals("(")) {
+            if (data[top].equals("(")) {
                 pop();
                 return 1;
             }
             return 0;
             case "[":
-            if(data[top].equals("(") || data[top].equals("[") || data[top].equals("{")) {
+            if (data[top].equals("(") || data[top].equals("[")
+                || data[top].equals("{")) {
                 top++;
                 data[top] = val;
                 return 1;
             }
             return 0;
             case "]":
-            if(data[top].equals("[")) {
+            if (data[top].equals("[")) {
                 pop();
                 return 1;
             }
             return 0;
             case "{":
-            if(data[top].equals("(") || data[top].equals("[") || data[top].equals("{")) {
+            if (data[top].equals("(") || data[top].equals("[")
+                || data[top].equals("{")) {
                 top++;
                 data[top] = val;
                 return 1;
             }
             return 0;
             case "}":
-            if(data[top].equals("{")) {
+            if (data[top].equals("{")) {
                 pop();
                 return 1;
             }
             return 0;
+            default:
         }
         return 0;
     }
