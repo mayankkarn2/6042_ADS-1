@@ -105,15 +105,22 @@ class Stack {
      *
      * @param      i     given value.
      */
-    public void setTop(int i) {
+    public void setTop(final int i) {
         top = i;
     }
 }
-public class Solution {
-
+final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //Nothing happens here.
     }
+    /**
+     * The main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Stack st = new Stack(2000);
         Scanner s = new Scanner(System.in);
@@ -132,8 +139,8 @@ public class Solution {
                     break;
                 }
             }
-            if (f!=0) {
-                if(j == inputs.length() && st.getTop() == -1) {
+            if (f != 0) {
+                if (j == inputs.length() && st.getTop() == -1) {
                     System.out.println("YES");
                 } else {
                     System.out.println("NO");   
