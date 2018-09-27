@@ -122,7 +122,7 @@ final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Stack st = new Stack(2000);
+        // Stack st = new Stack(2000);
         Scanner s = new Scanner(System.in);
         int lines = s.nextInt();
         s.nextLine();
@@ -130,6 +130,7 @@ final class Solution {
         while (i < lines) {
             String inputs = "";
             inputs = s.nextLine();
+            Stack st = new Stack(inputs.length());
             int j = 0, f = 0;
             st.setTop(-1);
             for (j = 0; j < inputs.length(); j++) {
