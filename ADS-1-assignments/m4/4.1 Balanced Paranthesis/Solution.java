@@ -6,11 +6,20 @@ class Stack {
     /**
      *  Array of Strings.
      */
-    private String[] data = new String[2000];
+    private String[] data;
     /**
      * Top value.
      */
-    private int top = -1;
+    private int top;
+    /**
+     * Constructs the object.
+     *
+     * @param      size  The size of Stack
+     */
+    Stack(int size) {
+        data = new String[size];
+        top = -1;
+    }
     /**
      * pushes the element into the stack for valid inputs.
      *
@@ -94,7 +103,7 @@ class Stack {
 }
 public class Solution {
     public static void main(String[] args) {
-        Stack st = new Stack();
+        Stack st = new Stack(2000);
         Scanner s = new Scanner(System.in);
         int lines = s.nextInt();
         s.nextLine();
