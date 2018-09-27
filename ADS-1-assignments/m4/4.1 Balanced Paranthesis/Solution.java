@@ -79,7 +79,7 @@ public class Solution {
 			int flag = 1;
 			st.top = -1;
 			inputs = s.nextLine();
-			System.out.println(inputs);
+			// System.out.println(inputs);
 			for(int j = 0; j < inputs.length(); j++) {
 				int f = st.push(inputs.charAt(j));
 				if(f == 0) {
