@@ -3,7 +3,13 @@ import java.util.Scanner;
  * Class for stack.
  */
 class Stack {
+    /**
+     *  Array of Strings.
+     */
     private String[] data = new String[2000];
+    /**
+     * Top value.
+     */
     private int top = -1;
     /**
      * pushes the element into the stack for valid inputs.
