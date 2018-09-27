@@ -74,6 +74,7 @@ public class Solution {
 			String inputs = "";
 			inputs = s.nextLine();
 			int j = 0;
+			st.top = -1;
 			for(j = 0; j < inputs.length(); j++) {
 				int f = st.push(inputs.charAt(j));
 				if(f == 0) {
