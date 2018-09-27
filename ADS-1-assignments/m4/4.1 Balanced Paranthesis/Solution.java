@@ -7,7 +7,7 @@ class Stack {
 		// System.out.println("i:"+input);
 		String val = Character.toString(input);
 		if(top == -1) {
-			if(val.equals("(")|| val.equals("[") || val.equals("{")) {
+			if(val.equals("(") || val.equals("[") || val.equals("{")) {
 				top++;
 				data[top] = val;
 				return 1;
@@ -77,17 +77,22 @@ public class Solution {
 		while(i < lines) {
 			String inputs = "";
 			int flag = 1;
+			st.top = -1;
 			inputs = s.nextLine();
-			// System.out.println(inputs);
+			System.out.println(inputs);
 			for(int j = 0; j < inputs.length(); j++) {
 				int f = st.push(inputs.charAt(j));
 				if(f == 0) {
 					System.out.println("NO");
 					break;
 				}
-				if(j == inputs.length()-1) {
+				if(j == inputs.length()-1 && st.top == -1) {
 					System.out.println("YES");
+					break;
 				}
+				// else {
+				// 	System.out.println("NO");
+				// }
 			}
 			i++;
 		}
