@@ -86,6 +86,14 @@ class AddLargeNumbers {
                 two.push(second.charAt(i));
             }
         }
+        else if (first.length() - second.length() == 0) {
+            for(int i = 0; i < first.length(); i++) {
+                one.push(first.charAt(i));
+            }
+            for(int i = 0; i < second.length(); i++) {
+                two.push(second.charAt(i));
+            }
+        }
         else {
             for(int i = 0; i < difference; i++) {
                 one.push('0');
