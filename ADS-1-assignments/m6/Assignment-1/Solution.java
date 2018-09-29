@@ -88,6 +88,7 @@ class AddLargeNumbers {
         else if (first.length() - second.length() == 0) {
             for(int i = 0; i < first.length(); i++) {
                 one.push(first.charAt(i));
+                // System.out.println("hi");
             }
             for(int i = 0; i < second.length(); i++) {
                 two.push(second.charAt(i));
@@ -108,18 +109,31 @@ class AddLargeNumbers {
         // two.print();
         carry.push('0');
         Stack res = new Stack();
-        while(one.top != -1) {
+        while(one.size() != 0) {
             int n1 = Integer.parseInt(String.valueOf(one.pop()));
+            // System.out.println("n1:"+n1);
             int n2 = Integer.parseInt(String.valueOf(two.pop()));
             int sum = n1 + n2 + Integer.parseInt(String.valueOf(carry.pop()));
-            // if(Integer.parseInt(String.valueOf(carry.pop())) > 0) {
-            //     sum = n1 + n2 + Integer.parseInt(String.valueOf(carry.pop()));
-            //     char c = carry.pop();
-            // }
-            res.push(Character.forDigit(sum % 10, 10));
-            carry.push(Character.forDigit(sum / 10, 10));
+            // System.out.println("sum"+sum);
+            // System.out.println("n2:"+n2);
+            if(one.size() == 0) {
+                String s = Integer.toString(sum);
+                // System.out.println(s);
+                for(int i = s.length()-1; i >= 0; i--) {
+                    res.push(s.charAt(i));
+                }
+            }
+            else {
+                res.push(Character.forDigit(sum % 10, 10));
+                // System.out.println(Character.forDigit(sum % 10, 10));
+                carry.push(Character.forDigit(sum / 10, 10));
+                // System.out.println(Character.forDigit(sum / 10, 10));
+                // System.out.println("--------------------------------------");
+            }
         }
+        // res.print();
         StringBuilder sbs = new StringBuilder(res.print());
+        // System.out.println(res.print());
         String result = sbs.reverse().toString();
         LinkedList ret = AddLargeNumbers.numberToDigits(result);
         return ret;
