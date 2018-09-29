@@ -4,6 +4,12 @@ import java.util.Scanner;
  */
 class AddLargeNumbers {
     /**
+     * Constructs the object.
+     */
+    private AddLargeNumbers() {
+        //Nothing happens here.
+    }
+    /**
      * Converts numbers to Linked Lists.
      *
      * @param      number  The number
@@ -12,7 +18,7 @@ class AddLargeNumbers {
      */
     public static LinkedList numberToDigits(final String number) {
         LinkedList num = new LinkedList();
-        for(int i = 0; i < number.length(); i++) {
+        for (int i = 0; i < number.length(); i++) {
             num.addAtHead(number.charAt(i));
         }
         return num;
@@ -34,7 +40,7 @@ class AddLargeNumbers {
      * @param      list1  The list 1 of numbers
      * @param      list2  The list 2 of numbers
      *
-     * @return     Add value in a Linked list 
+     * @return     Add value in a Linked list
      */
     public static LinkedList addLargeNumbers(final LinkedList list1,
         final LinkedList list2) {
@@ -44,37 +50,37 @@ class AddLargeNumbers {
         Stack two = new Stack();
         Stack carry = new Stack();
         int difference = first.length() - second.length();
-        if(difference < 0) {
+        if (difference < 0) {
             difference = -1 * (difference);
         }
         if (first.length() - second.length() > 0) {
-            for(int i = 0; i < first.length(); i++) {
+            for (int i = 0; i < first.length(); i++) {
                 one.push(first.charAt(i));
             }
-            for(int i = 0; i < difference; i++) {
+            for (int i = 0; i < difference; i++) {
                 two.push('0');
             }
-            for(int i = 0 ; i < second.length(); i++) {
+            for (int i = 0 ; i < second.length(); i++) {
                 two.push(second.charAt(i));
             }
         }
         else if (first.length() - second.length() == 0) {
-            for(int i = 0; i < first.length(); i++) {
+            for (int i = 0; i < first.length(); i++) {
                 one.push(first.charAt(i));
                 // System.out.println("hi");
             }
-            for(int i = 0; i < second.length(); i++) {
+            for (int i = 0; i < second.length(); i++) {
                 two.push(second.charAt(i));
             }
         }
         else {
-            for(int i = 0; i < difference; i++) {
+            for (int i = 0; i < difference; i++) {
                 one.push('0');
             }
-            for(int i = 0 ; i < first.length(); i++) {
+            for (int i = 0 ; i < first.length(); i++) {
                 one.push(first.charAt(i));
             }
-            for(int i = 0; i < second.length(); i++) {
+            for (int i = 0; i < second.length(); i++) {
                 two.push(second.charAt(i));
             }
         }
@@ -82,14 +88,14 @@ class AddLargeNumbers {
         // two.print();
         carry.push('0');
         Stack res = new Stack();
-        while(one.size() != 0) {
+        while (one.size() != 0) {
             int n1 = Integer.parseInt(String.valueOf(one.pop()));
             // System.out.println("n1:"+n1);
             int n2 = Integer.parseInt(String.valueOf(two.pop()));
             int sum = n1 + n2 + Integer.parseInt(String.valueOf(carry.pop()));
             // System.out.println("sum"+sum);
             // System.out.println("n2:"+n2);
-            if(one.size() == 0) {
+            if (one.size() == 0) {
                 String s = Integer.toString(sum);
                 // System.out.println(s);
                 for(int i = s.length()-1; i >= 0; i--) {
