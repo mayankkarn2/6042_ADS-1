@@ -1,20 +1,43 @@
 import java.util.Scanner;
+/**
+ * Class for add large numbers.
+ */
 class AddLargeNumbers {
-    
-    public static LinkedList numberToDigits(String number) {
+    /**
+     * Converts numbers to Linked Lists.
+     *
+     * @param      number  The number
+     *
+     * @return     Linked Lists of numbers.
+     */
+    public static LinkedList numberToDigits(final String number) {
         LinkedList num = new LinkedList();
         for(int i = 0; i < number.length(); i++) {
             num.addAtHead(number.charAt(i));
         }
         return num;
     }
-
-    public static String digitsToNumber(LinkedList list) {
+    /**
+     * Converts digits to Number.
+     *
+     * @param      list  The list
+     *
+     * @return     String value of digits.
+     */
+    public static String digitsToNumber(final LinkedList list) {
         StringBuilder sb = new StringBuilder(list.returnNumber(list));
         return sb.reverse().toString();
     }
-
-    public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+    /**
+     * Adds large numbers.
+     *
+     * @param      list1  The list 1 of numbers
+     * @param      list2  The list 2 of numbers
+     *
+     * @return     Add value in a Linked list 
+     */
+    public static LinkedList addLargeNumbers(final LinkedList list1,
+        final LinkedList list2) {
         String first = digitsToNumber(list1);
         String second = digitsToNumber(list2);
         Stack one = new Stack();
@@ -89,9 +112,22 @@ class AddLargeNumbers {
         return ret;
     }
 }
-
+/**
+ * Class for solution.
+ */
 public class Solution {
-    public static void main(String[] args) {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Nothing happens here.
+    }
+    /**
+     * The main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String p = sc.nextLine();
