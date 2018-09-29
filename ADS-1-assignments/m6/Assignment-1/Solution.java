@@ -74,7 +74,6 @@ class AddLargeNumbers {
         if(difference < 0) {
             difference = -1 * (difference);
         }
-
         if (first.length() - second.length() > 0) {
             for(int i = 0; i < first.length(); i++) {
                 one.push(first.charAt(i));
@@ -105,8 +104,8 @@ class AddLargeNumbers {
                 two.push(second.charAt(i));
             }
         }
-        one.print();
-        two.print();
+        // one.print();
+        // two.print();
         carry.push('0');
         Stack res = new Stack();
         while(one.top != -1) {
