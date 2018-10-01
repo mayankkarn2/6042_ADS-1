@@ -43,7 +43,6 @@ class Steque {
 	}
 
 	public void printSteque() {
-		// System.out.println(top);
 		if(top <= -1) {
 			System.out.print("Steque is empty.");
 		}
@@ -71,9 +70,9 @@ public class Solution {
 		while(n < testcases) {
 			str = "";
 			Steque mySteque = new Steque();
-			while(true) {
+			while(s.hasNext()) {
 				String input = s.nextLine();
-				if(input.equals("")) {
+				if (input.equals("")) {
 					break;
 				}
 				str += input + "\n";
