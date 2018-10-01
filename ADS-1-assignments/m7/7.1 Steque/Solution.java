@@ -1,9 +1,11 @@
-import java.util.Arrays;
 import java.util.Scanner;
+/**
+ * Class for steque.
+ */
 class Steque {
-	int[] store;
-	int top;
-	int rear;
+	private int[] store;
+	private int top;
+	private int rear;
 	Steque() {
 		store = new int[100];
 		top = -1;
