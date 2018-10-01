@@ -94,6 +94,7 @@ public class Solution {
 					mySteque.printSteque();
 				}
 			}
+			System.out.println();
 			n++;
 		}
 	}
