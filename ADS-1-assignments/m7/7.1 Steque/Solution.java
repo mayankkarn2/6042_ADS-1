@@ -4,7 +4,6 @@ class Steque {
 	int[] store;
 	int top;
 	int rear;
-	// int front;
 	Steque() {
 		store = new int[100];
 		top = -1;
@@ -12,22 +11,14 @@ class Steque {
 	}
 
 	public void push(int value) {
-		// System.out.println(value);
 		if(top == -1) {
-			// System.out.println("Hi");
 			rear++;
 		}
-		// System.out.println("Hello");
-		// System.out.println(top);
 		top = top + 1;
-		// System.out.println(top);
 		store[top] = value;
 	}
 
 	public void pop() {
-		// if(top == -1) {
-		// 	printSteque();
-		// }
 		if(top > -1) {
 			if(top == 0) {
 				rear--;
@@ -37,7 +28,6 @@ class Steque {
 	}
 
 	public void enqueue(int value) {
-		// System.out.println(store[top]);
 		if(top == -1) {
 			top++;
 			rear++;
@@ -88,18 +78,11 @@ public class Solution {
 				}
 				str += input + "\n";
 			}
-			// System.out.println(str);
-			// System.out.println("---------------------");
 			String[] inputs = str.split("\n");
-			// System.out.println(Arrays.toString(inputs));
-			// System.out.println(inputs.length);
 			for(int i = 0; i < inputs.length; i++) {
-				// System.out.println(inputs[i]);
-				// System.out.println("i:"+i);
 				if(inputs[i].contains("pop")) {
 					mySteque.pop();
 					mySteque.printSteque();
-					// System.out.println("b");
 				}
 				else if(inputs[i].contains("push")) {
 					String[] pushed = inputs[i].split(" ");
