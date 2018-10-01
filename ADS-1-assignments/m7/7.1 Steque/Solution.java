@@ -30,7 +30,7 @@ class Steque {
      * @param      value  The value
      */
     public void push(final int value) {
-        if(top == -1) {
+        if (top == -1) {
             rear++;
         }
         top = top + 1;
@@ -40,15 +40,15 @@ class Steque {
      * Removes the last element.
      */
     public void pop() {
-        if(top > -1) {
-            if(top == 0) {
+        if (top > -1) {
+            if (top == 0) {
                 rear--;
             }
             top--;
         }
     }
     /**
-     * Pushes the element at first position
+     * Pushes the element at first position.
      *
      * @param      value  The value
      */
@@ -57,10 +57,9 @@ class Steque {
             top++;
             rear++;
             store[rear] = value;
-        }
-        else {
-            for(int i = top; i >= 0; i--) {
-                store[i+1] = store[i]; 
+        } else {
+            for (int i = top; i >= 0; i--) {
+                store[i + 1] = store[i];
             }
             top = top + 1;
             store[rear] = value;
@@ -70,16 +69,14 @@ class Steque {
      * Prints out the stack.
      */
     public void printSteque() {
-        if(top <= -1) {
+        if (top <= -1) {
             System.out.print("Steque is empty.");
-        }
-        else {
-            for(int i = top; i > -1; i--) {
-                if(i == 0) {
+        } else {
+            for (int i = top; i > -1; i--) {
+                if (i == 0) {
                     System.out.print(store[i]);
-                }
-                else {
-                    System.out.print(store[i]+", ");    
+                } else {
+                    System.out.print(store[i] + ", ");
                 }
             }
         }
@@ -89,7 +86,10 @@ class Steque {
 /**
  * Class for solution.
  */
-public class Solution {
+final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //Nothing happens here.
     }
@@ -104,10 +104,10 @@ public class Solution {
         s.nextLine();
         int n = 0;
         String str = "";
-        while(n < testcases) {
+        while (n < testcases) {
             str = "";
             Steque mySteque = new Steque();
-            while(s.hasNext()) {
+            while (s.hasNext()) {
                 String input = s.nextLine();
                 if (input.equals("")) {
                     break;
@@ -115,17 +115,15 @@ public class Solution {
                 str += input + "\n";
             }
             String[] inputs = str.split("\n");
-            for(int i = 0; i < inputs.length; i++) {
-                if(inputs[i].contains("pop")) {
+            for (int i = 0; i < inputs.length; i++) {
+                if (inputs[i].contains("pop")) {
                     mySteque.pop();
                     mySteque.printSteque();
-                }
-                else if(inputs[i].contains("push")) {
+                } else if (inputs[i].contains("push")) {
                     String[] pushed = inputs[i].split(" ");
                     mySteque.push(Integer.parseInt(pushed[1]));
                     mySteque.printSteque();
-                }
-                else {
+                } else {
                     String[] enqueued = inputs[i].split(" ");
                     mySteque.enqueue(Integer.parseInt(enqueued[1]));
                     mySteque.printSteque();
