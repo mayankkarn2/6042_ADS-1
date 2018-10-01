@@ -1,49 +1,71 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
- * Class for solution.
+ * item_description.
  */
 final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
-        //Nothing happens here.
+        /**
+         * item_description.
+         */
     }
     /**
-     * The main function.
+     * Main function_description.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner s = new Scanner(System.in);
-        int size1 = s.nextInt();
-        int size2 = s.nextInt();
-        int main = size1 + size2;
-        s.nextLine();
-        int[] arr1 = new int[size1];
-        int[] arr2 = new int[size2];
-        String str1 = s.nextLine();
-        String[] sarr1 = str1.split(",");
-        String str2 = s.nextLine();
-        String[] sarr2 = str2.split(",");
-        for (int i = 0; i < size1; i++) {
-            arr1[i] = Integer.parseInt(sarr1[i]);
-        }
-        for (int i = 0; i < size2; i++) {
-            arr2[i] = Integer.parseInt(sarr2[i]);
-        }
-        int[] last = new int[size1 + size2];
-        for (int i = 0; i < size1; i++) {
-            last[i] = arr1[i];
-        }
-        int j = 0;
-        int i = size1;
-        for (j = 0, i = size1; j < size2; i++, j++) {
-            last[i] = arr2[j];
-        }
-        Arrays.sort(last);
-        System.out.println(Arrays.toString(last)
-            .replace("[", "").replace("]", "").replace(" ", ""));
+    Scanner s = new Scanner(System.in);
+    String s1 = s.nextLine();
+    String s2 = s.nextLine();
+    int number1 = Integer.parseInt(s1);
+    int number2 = Integer.parseInt(s2);
+    int total = number1 + number2;
+    String[] token = s.nextLine().split(",");
+    int[] a = new int[number1];
+    int[] b = new int[number2];
+    if (number1 > 0) {
+    for (int i = 0; i < token.length; i++) {
+        a[i] = Integer.parseInt(token[i]);
     }
 }
+    if (number2 > 0) {
+    String[] tokens = s.nextLine().split(",");
+    for (int j = 0; j < tokens.length; j++) {
+        b[j] = Integer.parseInt(tokens[j]);
+    }
+}
+    int[] c = new int[total];
+    int i = 0;
+    int j = 0;
+    int k = 0;
+    while (i < number1 && j < number2) {
+        if (a[i] < b[j]) {
+            c[k] = a[i];
+            i++;
+            k++;
+        } else {
+            c[k] = b[j];
+            k++;
+            j++;
+        }
+    }
+    while (j < number2) {
+        c[k] = b[j];
+        k++;
+        j++;
+    }
+    while (i < number1) {
+        c[k] = a[i];
+        k++;
+        i++;
+    }
+    for (int l = 0; l < c.length - 1; l++) {
+        System.out.print(c[l] + ",");
+    }
+     System.out.print(c[c.length - 1]);
+    }
+}
+
