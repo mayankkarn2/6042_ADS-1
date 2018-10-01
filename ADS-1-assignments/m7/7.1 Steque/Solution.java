@@ -53,7 +53,7 @@ class Steque {
      * @param      value  The value
      */
     public void enqueue(final int value) {
-        if(top == -1) {
+        if (top == -1) {
             top++;
             rear++;
             store[rear] = value;
