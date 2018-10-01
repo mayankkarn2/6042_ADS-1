@@ -1,0 +1,185 @@
+########## Testcase 0: Passed ##########
+Expected Output: 
+1
+2, 1
+3, 2, 1
+4, 3, 2, 1
+4, 3, 2, 1, 0
+4, 3, 2, 1, 0, 1
+3, 2, 1, 0, 1
+2, 1, 0, 1
+1, 0, 1
+0, 1
+1
+Steque is empty.
+Steque is empty.
+
+Your Output: 
+1
+2, 1
+3, 2, 1
+4, 3, 2, 1
+4, 3, 2, 1, 0
+4, 3, 2, 1, 0, 1
+3, 2, 1, 0, 1
+2, 1, 0, 1
+1, 0, 1
+0, 1
+1
+Steque is empty.
+Steque is empty.
+
+----------------------------------------
+########## Testcase 1: Passed ##########
+Expected Output: 
+Steque is empty.
+Steque is empty.
+
+1
+2, 1
+3, 2, 1
+4, 3, 2, 1
+3, 2, 1
+2, 1
+1
+Steque is empty.
+5
+5, 6
+5, 6, 7
+5, 6, 7, 8
+6, 7, 8
+7, 8
+
+100
+100, 200
+100, 200, 300
+100, 200, 300, 400
+100, 200, 300, 400, 500
+100, 200, 300, 400, 500, 600
+100, 200, 300, 400, 500, 600, 700
+100, 200, 300, 400, 500, 600, 700, 800
+900, 100, 200, 300, 400, 500, 600, 700, 800
+1000, 900, 100, 200, 300, 400, 500, 600, 700, 800
+1000, 900, 100, 200, 300, 400, 500, 600, 700, 800, 1100
+1000, 900, 100, 200, 300, 400, 500, 600, 700, 800, 1100, 1200
+900, 100, 200, 300, 400, 500, 600, 700, 800, 1100, 1200
+100, 200, 300, 400, 500, 600, 700, 800, 1100, 1200
+
+10
+10, 9
+8, 10, 9
+8, 10, 9, 7
+6, 8, 10, 9, 7
+6, 8, 10, 9, 7, 5
+4, 6, 8, 10, 9, 7, 5
+4, 6, 8, 10, 9, 7, 5, 3
+2, 4, 6, 8, 10, 9, 7, 5, 3
+2, 4, 6, 8, 10, 9, 7, 5, 3, 1
+
+Your Output: 
+Steque is empty.
+Steque is empty.
+
+1
+2, 1
+3, 2, 1
+4, 3, 2, 1
+3, 2, 1
+2, 1
+1
+Steque is empty.
+5
+5, 6
+5, 6, 7
+5, 6, 7, 8
+6, 7, 8
+7, 8
+
+100
+100, 200
+100, 200, 300
+100, 200, 300, 400
+100, 200, 300, 400, 500
+100, 200, 300, 400, 500, 600
+100, 200, 300, 400, 500, 600, 700
+100, 200, 300, 400, 500, 600, 700, 800
+900, 100, 200, 300, 400, 500, 600, 700, 800
+1000, 900, 100, 200, 300, 400, 500, 600, 700, 800
+1000, 900, 100, 200, 300, 400, 500, 600, 700, 800, 1100
+1000, 900, 100, 200, 300, 400, 500, 600, 700, 800, 1100, 1200
+900, 100, 200, 300, 400, 500, 600, 700, 800, 1100, 1200
+100, 200, 300, 400, 500, 600, 700, 800, 1100, 1200
+
+10
+10, 9
+8, 10, 9
+8, 10, 9, 7
+6, 8, 10, 9, 7
+6, 8, 10, 9, 7, 5
+4, 6, 8, 10, 9, 7, 5
+4, 6, 8, 10, 9, 7, 5, 3
+2, 4, 6, 8, 10, 9, 7, 5, 3
+2, 4, 6, 8, 10, 9, 7, 5, 3, 1
+
+----------------------------------------
+Result: 2/2 testcases passed.
+Starting audit...
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:4:12: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:4:15: Variable 'store' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:5:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:5:13: Variable 'top' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:6:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:6:13: Variable 'rear' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:7:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:8:33: '100' is a magic number. [MagicNumber]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:13:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:13:26: Parameter value should be final. [FinalParameters]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:14:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:21:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:22:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:23:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:30:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:30:29: Parameter value should be final. [FinalParameters]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:31:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:35:17: '}' at column 3 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:37:28: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:38: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:38:40: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:38:41: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:45:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:46:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:48:17: '}' at column 3 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:50:28: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:51:35: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:53:33: '}' at column 5 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:55: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:55:66: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:55:67: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:63: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:63:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:64:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:64:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:70:22: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:73:30: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:81:28: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:82:35: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:85:33: '}' at column 5 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:86:40: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:88: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:90:33: '}' at column 5 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:92: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m7\7.1 Steque\Solution.java:93: Line is longer than 80 characters (found 88). [LineLength]
+Audit done.
+Checkstyle ends with 49 errors.
+
+
+[master 34cd986] "check_style_score -> 2 of 2 passed. style score: 0/1 "
+ 3 files changed, 2 insertions(+), 1 deletion(-)
+ rewrite ADS-1-assignments/m7/7.1 Steque/Solution.class (77%)
+
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
