@@ -6,7 +6,7 @@ class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
         //Nothing happens here
     }
     /**
@@ -38,49 +38,51 @@ class Solution {
         Student[] result = new Student[vacancies];
         store.printStudents();
         int k = 0;
-        for(i = 0; i < unreserved; i++) {
+        for (i = 0; i < unreserved; i++) {
             result[k] = merit[i];
             merit[i].setInc("INC");
             k++;
         }
         int count = 0;
-        for(i = 0; i < merit.length; i++) {
-            if(count == bcVac) break;
-            if(merit[i].getCat().equals("BC") && merit[i].getInc().equals("n")) {
+        for (i = 0; i < merit.length; i++) {
+            if (count == bcVac) {
+                break;
+            }
+            if (merit[i].getCat().equals("BC") && merit[i].getInc().equals("n")) {
                 result[k] = merit[i];
                 count++;
                 k++;
             }
         }
         count = 0;
-        for(i = 0; i < merit.length; i++) {
-            if(count == scVac) break;
-            if(merit[i].getCat().equals("SC") && merit[i].getInc().equals("n")) {
+        for (i = 0; i < merit.length; i++) {
+            if (count == scVac) break;
+            if (merit[i].getCat().equals("SC") && merit[i].getInc().equals("n")) {
                 result[k] = merit[i];
                 count++;
                 k++;
             }
         }
         count = 0;
-        for(i = 0; i < merit.length; i++) {
-            if(count == stVac) break;
-            if(merit[i].getCat().equals("ST") && merit[i].getInc().equals("n")) {
+        for (i = 0; i < merit.length; i++) {
+            if (count == stVac) break;
+            if (merit[i].getCat().equals("ST") && merit[i].getInc().equals("n")) {
                 result[k] = merit[i];
                 count++;
                 k++;
             }
         }
         // System.out.println(k);
-        for(i = 0; i < k; i++) {
-            for(int j = i+1; j < k; j++) {
-                if(result[j].getTotal() > result[i].getTotal()) {
+        for (i = 0; i < k; i++) {
+            for (int j = i+1; j < k; j++) {
+                if (result[j].getTotal() > result[i].getTotal()) {
                     Student temp = result[i];
                     result[i] = result[j];
                     result[j] = temp;
                 }
             }
         }
-        for(i = 0; i < k; i++) {
+        for (i = 0; i < k; i++) {
             System.out.print(result[i].getName()+",");
             System.out.print(result[i].getTotal()+",");
             System.out.println(result[i].getCat());
