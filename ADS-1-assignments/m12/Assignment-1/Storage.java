@@ -44,24 +44,24 @@ class Storage {
 			}
 			i++;
 		}
-		//Sort by subject 2
-		i = 0;
-		while(i < size-1) {
-			int j = i+1;
-			while(students[i].getTotal() == students[j].getTotal()) {
-				j++;
-			}
-			for(int k = i; k < j; k++) {
-				for(int l = i+1; l < j; l++) {
-					if(students[l].getSub2() > students[k].getSub2()) {
-						Student temp = students[k];
-						students[k] = students[l];
-						students[l] = temp;
-					}
-				}
-			}
-			i++;
-		}
+		// //Sort by subject 2
+		// i = 0;
+		// while(i < size-1) {
+		// 	int j = i+1;
+		// 	while(students[i].getTotal() == students[j].getTotal()) {
+		// 		j++;
+		// 	}
+		// 	for(int k = i; k < j; k++) {
+		// 		for(int l = i+1; l < j; l++) {
+		// 			if(students[l].getSub2() > students[k].getSub2()) {
+		// 				Student temp = students[k];
+		// 				students[k] = students[l];
+		// 				students[l] = temp;
+		// 			}
+		// 		}
+		// 	}
+		// 	i++;
+		// }
 		return students;
 		//Sort by DOB
 		// i = 0;
