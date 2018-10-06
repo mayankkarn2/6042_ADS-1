@@ -48,8 +48,8 @@ class Solution {
             if (count == bcVac) {
                 break;
             }
-            if (merit[i].getCat().equals("BC") &&
-                merit[i].getInc().equals("n")) {
+            if (merit[i].getCat().equals("BC")
+                && merit[i].getInc().equals("n")) {
                 result[k] = merit[i];
                 count++;
                 k++;
@@ -60,8 +60,8 @@ class Solution {
             if (count == scVac) {
                 break;
             }
-            if (merit[i].getCat().equals("SC") &&
-                merit[i].getInc().equals("n")) {
+            if (merit[i].getCat().equals("SC")
+                && merit[i].getInc().equals("n")) {
                 result[k] = merit[i];
                 count++;
                 k++;
@@ -69,9 +69,11 @@ class Solution {
         }
         count = 0;
         for (i = 0; i < merit.length; i++) {
-            if (count == stVac) break;
-            if (merit[i].getCat().equals("ST") &&
-                merit[i].getInc().equals("n")) {
+            if (count == stVac) {
+                break;
+            }
+            if (merit[i].getCat().equals("ST")
+                && merit[i].getInc().equals("n")) {
                 result[k] = merit[i];
                 count++;
                 k++;
