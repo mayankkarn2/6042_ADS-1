@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
@@ -28,10 +28,13 @@ class Solution {
         while (i < lines) {
             String data = s.nextLine();
             String[] datas = data.split(",");
+            final int th = 3;
+            final int fo = 4;
+            final int six = 6;
             store.addStudent(new Student(datas[0], datas[1],
                 Integer.parseInt(datas[2]),
-                Integer.parseInt(datas[3]),
-                Integer.parseInt(datas[4]), datas[6]));
+                Integer.parseInt(datas[th]),
+                Integer.parseInt(datas[fo]), datas[six]));
             i++;
         }
         Student[] merit = store.meritOrder();
