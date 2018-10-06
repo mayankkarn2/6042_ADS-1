@@ -81,7 +81,7 @@ class Solution {
         }
         // System.out.println(k);
         for (i = 0; i < k; i++) {
-            for (int j = i+1; j < k; j++) {
+            for (int j = i + 1; j < k; j++) {
                 if (result[j].getTotal() > result[i].getTotal()) {
                     Student temp = result[i];
                     result[i] = result[j];
@@ -90,8 +90,8 @@ class Solution {
             }
         }
         for (i = 0; i < k; i++) {
-            System.out.print(result[i].getName()+",");
-            System.out.print(result[i].getTotal()+",");
+            System.out.print(result[i].getName() + ",");
+            System.out.print(result[i].getTotal() + ",");
             System.out.println(result[i].getCat());
         }
     }
