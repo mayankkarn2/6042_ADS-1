@@ -28,8 +28,9 @@ class Solution {
         while (i < lines) {
             String data = s.nextLine();
             String[] datas = data.split(",");
-            store.addStudent(new Student(datas[0],datas[1],Integer.parseInt(datas[2]),
-                Integer.parseInt(datas[3]),Integer.parseInt(datas[4]), datas[6]));
+            store.addStudent(new Student(datas[0], datas[1], Integer.parseInt(datas[2]),
+                Integer.parseInt(datas[3]),
+                Integer.parseInt(datas[4]), datas[6]));
             i++;
         }
         Student[] merit = store.meritOrder();
