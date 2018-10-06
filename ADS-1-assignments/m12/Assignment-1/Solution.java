@@ -53,7 +53,7 @@ class Solution {
 				k++;
 			}
 		}
-		System.out.println(k);
+		// System.out.println(k);
 		for(i = 0; i < k; i++) {
 			for(int j = i+1; j < k; j++) {
 				if(result[j].getTotal() > result[i].getTotal()) {
