@@ -14,7 +14,6 @@ class Solution {
 		while(i < lines) {
 			String data = s.nextLine();
 			String[] datas = data.split(",");
-			// System.out.println(datas[]);
 			store.addStudent(new Student(datas[0],datas[1],Integer.parseInt(datas[2]),Integer.parseInt(datas[3]),Integer.parseInt(datas[4]), datas[6]));
 			i++;
 		}
@@ -23,9 +22,6 @@ class Solution {
 		store.printStudents();
 		int k = 0;
 		for(i = 0; i < unreserved; i++) {
-			// System.out.print(merit[i].getName()+",");
-			// System.out.print(merit[i].getTotal()+",");
-			// System.out.println(merit[i].getCat());
 			result[k] = merit[i];
 			merit[i].setInc("INC");
 			k++;
@@ -33,11 +29,7 @@ class Solution {
 		int count = 0;
 		for(i = 0; i < merit.length; i++) {
 			if(count == bcVac) break;
-			// System.out.println("hi");
 			if(merit[i].getCat().equals("BC") && merit[i].getInc().equals("n")) {
-				// System.out.print(merit[i].getName()+",");
-				// System.out.print(merit[i].getTotal()+",");
-				// System.out.println(merit[i].getCat());
 				result[k] = merit[i];
 				count++;
 				k++;
@@ -47,9 +39,6 @@ class Solution {
 		for(i = 0; i < merit.length; i++) {
 			if(count == scVac) break;
 			if(merit[i].getCat().equals("SC") && merit[i].getInc().equals("n")) {
-				// System.out.print(merit[i].getName()+",");
-				// System.out.print(merit[i].getTotal()+",");
-				// System.out.println(merit[i].getCat());
 				result[k] = merit[i];
 				count++;
 				k++;
@@ -59,15 +48,12 @@ class Solution {
 		for(i = 0; i < merit.length; i++) {
 			if(count == stVac) break;
 			if(merit[i].getCat().equals("ST") && merit[i].getInc().equals("n")) {
-				// System.out.print(merit[i].getName()+",");
-				// System.out.print(merit[i].getTotal()+",");
-				// System.out.println(merit[i].getCat());
 				result[k] = merit[i];
 				count++;
 				k++;
 			}
 		}
-		// System.out.println(k);
+		System.out.println(k);
 		for(i = 0; i < k; i++) {
 			for(int j = i+1; j < k; j++) {
 				if(result[j].getTotal() > result[i].getTotal()) {
