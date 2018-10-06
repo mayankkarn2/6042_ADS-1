@@ -1,6 +1,20 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 class Solution {
-	public static void main(String[] args) {
+	/**
+	 * Constructs the object.
+	 */
+	Solution() {
+		//Nothing happens here
+	}
+	/**
+	 * Main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		int lines = s.nextInt();
 		int vacancies = s.nextInt();
