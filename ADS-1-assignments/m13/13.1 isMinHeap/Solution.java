@@ -8,8 +8,10 @@ class MinHeap<E> {
 	}
 	public Boolean isHeap() {
 		for(int i = 1; i < data.length; i++) {
-			// System.out.println(data[i].compareTo(data[i/2]));
-			if(data[i].compareTo(data[i/2]) > 0 || data[i].compareTo(data[(i/2)+1]) > 0) {
+			System.out.println(data[i]);
+			System.out.println(data[i/2]);
+			System.out.println(data[i].compareTo(data[i/2]));
+			if(data[i].compareTo(data[i/2]) > 0) {
 				return false;
 			}
 		}
