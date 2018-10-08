@@ -24,17 +24,6 @@ Starting audit...
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:45:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:48: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:59: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:61:22: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:65:23: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:71:24: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:80:22: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:85:24: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:90: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:94:22: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:97:23: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:103:24: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:111:23: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:117:22: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:120:23: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 37 errors.
+Checkstyle ends with 26 errors.

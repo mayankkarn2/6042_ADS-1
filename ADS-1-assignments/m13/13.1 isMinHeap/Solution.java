@@ -58,17 +58,17 @@ class Solution {
         sc.nextLine();
         switch (datatype) {
             case "Double":
-                while(i < lines) {
+                while (i < lines) {
                     // if(sc.next().equals(""))
                     int j = 0;
                     String data = sc.nextLine();
-                    if(data.equals("")) {
+                    if (data.equals("")) {
                         System.out.println("false");
                         break;
                     }
                     String[] datas = data.split(",");
                     Double[] d = new Double[datas.length];
-                    for(String st : datas) {
+                    for (String st : datas) {
                         d[j] = Double.parseDouble(st);
                         j++;
                     }
@@ -77,12 +77,12 @@ class Solution {
                     i++;
                 }
             case "Integer":
-                while(i < lines) {
+                while (i < lines) {
                     int j = 0;
                     String data = sc.nextLine();
                     String[] datas = data.split(",");
                     Integer[] d = new Integer[datas.length];
-                    for(String st : datas) {
+                    for (String st : datas) {
                         d[j] = Integer.parseInt(st);
                         j++;
                     }
@@ -91,16 +91,16 @@ class Solution {
                     i++;
                 }
             case "Float":
-                while(i < lines) {
+                while (i < lines) {
                     int j = 0;
                     String data = sc.nextLine();
-                    if(data.equals("")) {
+                    if (data.equals("")) {
                         System.out.println("false");
                         break;
                     }
                     String[] datas = data.split(",");
                     Float[] d = new Float[datas.length];
-                    for(String st : datas) {
+                    for (String st : datas) {
                         d[j] = Float.parseFloat(st);
                         j++;
                     }
@@ -108,16 +108,16 @@ class Solution {
                     System.out.println(mh.isHeap());
                     i++;
                     // System.out.println(":"+sc.hasNext());
-                    if(!sc.hasNext()) {
+                    if (!sc.hasNext()) {
                         // System.out.println("false");
                         break;
                     }
                 }
             case "String":
-                while(i < lines) {
+                while (i < lines) {
                     int j = 0;
                     String data = sc.nextLine();
-                    if(data.equals("")) {
+                    if (data.equals("")) {
                         System.out.println("false");
                         break;
                     }
