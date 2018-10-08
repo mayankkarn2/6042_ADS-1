@@ -1,12 +1,5 @@
 Starting audit...
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:32:18: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:32:19: '*' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:33:56: '||' should be on a new line. [OperatorWrap]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:44: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:45:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:48: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:59: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:90: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:51: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 2 errors.

@@ -29,9 +29,9 @@ class MinHeap<E> {
      */
     public Boolean isHeap() {
         for (int i = 0; i < (data.length - 1) / 2
-            && (2*i + 2 <= data.length - 1); i++) {
-            if (data[i].compareTo(data[2 * i + 1]) > 0 ||
-                data[i].compareTo(data[2 * i + 2]) > 0) {
+            && (2 * i + 2 <= data.length - 1); i++) {
+            if (data[i].compareTo(data[2 * i + 1]) > 0
+                || data[i].compareTo(data[2 * i + 2]) > 0) {
                 return false;
             }
         }
@@ -41,7 +41,10 @@ class MinHeap<E> {
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //Nothing happens here.
     }
@@ -87,7 +90,7 @@ class Solution {
                         j++;
                     }
                     MinHeap<Integer> mh = new MinHeap(d);
-                    System.out.println(mh.isHeap());                    
+                    System.out.println(mh.isHeap());
                     i++;
                 }
             case "Float":
@@ -126,6 +129,8 @@ class Solution {
                     System.out.println(mh.isHeap());
                     i++;
                 }
+            default:
+            break;
         }
     }
 }
