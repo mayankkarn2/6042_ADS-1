@@ -18,7 +18,7 @@ class MinHeap<E> {
      *
      * @param      values  The values
      */
-    MinHeap(Comparable[] values) {
+    MinHeap(final Comparable[] values) {
         data = values;
         size = 0;
     }
@@ -28,8 +28,10 @@ class MinHeap<E> {
      * @return     True if heap, False otherwise.
      */
     public Boolean isHeap() {
-        for(int i = 0; i < (data.length-1)/2 && (2*i+2 <= data.length-1); i++) {
-            if(data[i].compareTo(data[2*i+1]) > 0 || data[i].compareTo(data[2*i+2]) > 0) {
+        for (int i = 0; i < (data.length-1)/2 &&
+            (2*i+2 <= data.length-1); i++) {
+            if (data[i].compareTo(data[2*i+1]) > 0 ||
+                data[i].compareTo(data[2*i+2]) > 0) {
                 return false;
             }
         }
