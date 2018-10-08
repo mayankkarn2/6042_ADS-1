@@ -49,7 +49,7 @@ final class Solution {
         //Nothing happens here.
     }
     /**
-     * The main function
+     * The main function.
      *
      * @param      args  The arguments
      */
