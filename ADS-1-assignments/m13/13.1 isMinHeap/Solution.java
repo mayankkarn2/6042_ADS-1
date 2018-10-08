@@ -4,9 +4,7 @@ class MinHeap<E> {
 	int size;
 	MinHeap(Comparable[] values) {
 		data = values;
-		data[0] = null;
 		size = 0;
-		System.out.println("Object");
 	}
 	public Boolean isHeap() {
 		for(int i = 1; i < data.length; i++) {
