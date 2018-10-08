@@ -30,6 +30,10 @@ class Solution {
 					// if(sc.next().equals(""))
 					int j = 0;
 					String data = sc.nextLine();
+					if(data.equals("")) {
+						System.out.println("false");
+						break;
+					}
 					String[] datas = data.split(",");
 					Double[] d = new Double[datas.length];
 					for(String st : datas) {
@@ -58,6 +62,10 @@ class Solution {
 				while(i < lines) {
 					int j = 0;
 					String data = sc.nextLine();
+					if(data.equals("")) {
+						System.out.println("false");
+						break;
+					}
 					String[] datas = data.split(",");
 					Float[] d = new Float[datas.length];
 					for(String st : datas) {
@@ -67,6 +75,11 @@ class Solution {
 					MinHeap<Float> mh = new MinHeap(d);
 					System.out.println(mh.isHeap());
 					i++;
+					// System.out.println(":"+sc.hasNext());
+					if(!sc.hasNext()) {
+						// System.out.println("false");
+						break;
+					}
 				}
 			case "String":
 				while(i < lines) {
