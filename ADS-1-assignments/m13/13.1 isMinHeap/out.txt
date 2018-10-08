@@ -1,0 +1,118 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+true
+false
+true
+false
+
+Your Output: 
+false
+false
+false
+false
+
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+false
+false
+false
+false
+false
+false
+
+Your Output: 
+true
+true
+true
+true
+true
+true
+
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+true
+true
+true
+false
+false
+false
+true
+false
+
+Your Output: 
+false
+false
+false
+false
+false
+false
+false
+false
+
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+true
+false
+false
+
+Your Output: 
+true
+true
+true
+
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+true
+true
+false
+
+Your Output: 
+false
+false
+false
+
+----------------------------------------
+Result: 0/5 testcases passed.
+Starting audit...
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:3:19: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:3:22: Variable 'data' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:4:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:4:13: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:5:17: Parameter values should be final. [FinalParameters]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:9:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:10:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:14:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:14:52: '/' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:14:53: '/' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:22: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:22:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:23:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:23:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:31: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:33:38: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:36:44: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:45:38: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:48:44: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:53: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:53: Line is longer than 80 characters (found 112). [LineLength]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:57:38: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:60:44: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m13\13.1 isMinHeap\Solution.java:69:38: 'while' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 28 errors.
+
+
+[master 863aa34] "check_style_score -> 0 of 5 passed. style score: 0/1 "
+ 3 files changed, 3 insertions(+), 3190 deletions(-)
+ rewrite ADS-1-assignments/m13/13.1 isMinHeap/MinHeap.class (82%)
+ rewrite ADS-1-assignments/m13/13.1 isMinHeap/out.txt (100%)
+
+

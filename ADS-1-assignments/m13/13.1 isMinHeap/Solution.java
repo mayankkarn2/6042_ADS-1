@@ -7,11 +7,11 @@ class MinHeap<E> {
 		size = 0;
 	}
 	public Boolean isHeap() {
-		for(int i = 1; i < data.length; i++) {
+		for(int i = 0; i < data.length; i++) {
 			// System.out.println(data[i]);
 			// System.out.println(data[i/2]);
 			// System.out.println(data[i].compareTo(data[i/2]));
-			if(data[i].compareTo(data[i/2]) > 0) {
+			if(data[i].compareTo(data[2*i+1]) > 0 || data[i].compareTo(data[2*i+2]) > 0) {
 				return false;
 			}
 		}
