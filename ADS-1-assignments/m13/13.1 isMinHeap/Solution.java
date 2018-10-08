@@ -6,16 +6,9 @@ class MinHeap<E> {
 	MinHeap(Comparable[] values) {
 		data = values;
 		size = 0;
-		// System.out.println(Arrays.toString(data));
 	}
 	public Boolean isHeap() {
-		// System.out.println(data.length);
 		for(int i = 0; i < (data.length-1)/2 && (2*i+2 <= data.length-1); i++) {
-			// System.out.println("---------");
-			// System.out.println(data[i]);
-			// System.out.println(data[2*i+1]);
-			// System.out.println(data[2*i+2]);
-			// System.out.println(data[i].compareTo(data[2*i+2]));
 			if(data[i].compareTo(data[2*i+1]) > 0 || data[i].compareTo(data[2*i+2]) > 0) {
 				return false;
 			}
@@ -34,6 +27,7 @@ class Solution {
 		switch (datatype) {
 			case "Double":
 				while(i < lines) {
+					// if(sc.next().equals(""))
 					int j = 0;
 					String data = sc.nextLine();
 					String[] datas = data.split(",");
@@ -78,6 +72,10 @@ class Solution {
 				while(i < lines) {
 					int j = 0;
 					String data = sc.nextLine();
+					if(data.equals("")) {
+						System.out.println("false");
+						break;
+					}
 					String[] datas = data.split(",");
 					MinHeap<String> mh = new MinHeap(datas);
 					System.out.println(mh.isHeap());
