@@ -36,7 +36,7 @@ class Solution {
 						j++;
 					}
 					MinHeap<Double> mh = new MinHeap(d);
-					mh.isHeap();
+					System.out.println(mh.isHeap());
 					i++;
 				}
 			case "Integer":
@@ -48,7 +48,7 @@ class Solution {
 						j++;
 					}
 					MinHeap<Integer> mh = new MinHeap(d);
-					mh.isHeap();
+					System.out.println(mh.isHeap());					
 					i++;
 				}
 			case "Float":
@@ -60,14 +60,14 @@ class Solution {
 						j++;
 					}
 					MinHeap<Float> mh = new MinHeap(d);
-					mh.isHeap();
+					System.out.println(mh.isHeap());
 					i++;
 				}
 			case "String":
 				while(i < lines) {
 					int j = 0;
 					MinHeap<String> mh = new MinHeap(datas);
-					mh.isHeap();
+					System.out.println(mh.isHeap());
 					i++;
 				}
 		}
