@@ -19,7 +19,7 @@ class LinkedList<E> {
         /**
          * Next node reference.
          */
-        Node next;
+        private Node next;
     }
     private Node head, tail;
     private Node thead = head;

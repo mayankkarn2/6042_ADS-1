@@ -1,5 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:22:14: Variable 'next' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:24:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:25:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:26:5: Missing a Javadoc comment. [JavadocVariable]
@@ -16,4 +15,4 @@ Starting audit...
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:111:29: 'head' hides a field. [HiddenField]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:145: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 15 errors.
