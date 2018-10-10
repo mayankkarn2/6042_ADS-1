@@ -1,9 +1,7 @@
 Starting audit...
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:65:44: ')' is preceded with whitespace. [ParenPad]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:97:14: 'thead' hides a field. [HiddenField]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:104: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:120:24: Parameter head should be final. [FinalParameters]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:120:29: 'head' hides a field. [HiddenField]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:153: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 4 errors.

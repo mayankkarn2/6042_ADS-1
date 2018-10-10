@@ -62,7 +62,7 @@ class LinkedList<E> {
      */
     public void insertAt(final int index, final E data) {
         try {
-            if (index >= 0 && index <= size ) {
+            if (index >= 0 && index <= size) {
                 if (index == 0) {
                     addAtHead(data);
                     return;
@@ -101,7 +101,7 @@ class LinkedList<E> {
         }
         System.out.println(thead.data);
         count = 0;
-    } 
+    }
     /**
      * reverse the given linked list.
      */
