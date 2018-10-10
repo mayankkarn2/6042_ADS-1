@@ -1,9 +1,8 @@
 Starting audit...
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:15:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:16:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:16:14: Variable 'next' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:18:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:18:10: Variable 'head' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:18:16: Variable 'tail' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:19:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:19:10: Variable 'thead' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:20:5: Missing a Javadoc comment. [JavadocVariable]
@@ -22,4 +21,4 @@ Starting audit...
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:105:29: 'head' hides a field. [HiddenField]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:139: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 21 errors.

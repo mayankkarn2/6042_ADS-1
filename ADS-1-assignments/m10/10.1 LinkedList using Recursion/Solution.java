@@ -13,9 +13,9 @@ class LinkedList<E> {
      */
     private class Node {
         private E data;
-        private Node next;
+        Node next;
     }
-    Node head, tail;
+    private Node head, tail;
     Node thead = head;
     int count = 0;
     int size = 0;
