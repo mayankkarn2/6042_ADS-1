@@ -6,7 +6,6 @@ Starting audit...
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:19:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:20:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:21:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:21:9: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:27:27: Parameter data should be final. [FinalParameters]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:31: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:37: First sentence should end with a period. [JavadocStyle]
@@ -19,4 +18,4 @@ Starting audit...
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:105:29: 'head' hides a field. [HiddenField]
 [ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:139: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 18 errors.
