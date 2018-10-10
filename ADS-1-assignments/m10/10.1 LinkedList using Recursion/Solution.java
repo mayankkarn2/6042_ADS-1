@@ -13,9 +13,12 @@ class LinkedList<E> {
      */
     private class Node {
         /**
-         * To store data
+         * To store data.
          */
         private E data;
+        /**
+         * Next node reference.
+         */
         Node next;
     }
     private Node head, tail;
