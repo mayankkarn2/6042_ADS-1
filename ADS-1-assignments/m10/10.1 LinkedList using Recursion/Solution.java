@@ -12,6 +12,9 @@ class LinkedList<E> {
      * Class for node.
      */
     private class Node {
+        /**
+         * To store data
+         */
         private E data;
         Node next;
     }
