@@ -21,9 +21,21 @@ class LinkedList<E> {
          */
         private Node next;
     }
+    /**
+     * Head and Tail.
+     */
     private Node head, tail;
+    /**
+     * A temporary head.
+     */
     private Node thead = head;
+    /**
+     * Count of nodes.
+     */
     private int count = 0;
+    /**
+     * Size of linked list.
+     */
     private int size = 0;
     /**
      * Adds an at head.
