@@ -55,7 +55,7 @@ class LinkedList<E> {
         thead = head;
     }
     /**
-     * inserts the element at the required position
+     * inserts the element at the required position.
      *
      * @param      index  The index
      * @param      data   The data
@@ -65,12 +65,9 @@ class LinkedList<E> {
             if (index >= 0 && index <= size ) {
                 if (index == 0) {
                     addAtHead(data);
-                    //thead = head;
                     return;
                 }
                 if (count == index - 1) {
-                    //System.out.println(count);
-                    //System.out.println(thead.data);
                     Node node = new Node();
                     node.data = data;
                     node.next = thead.next;
@@ -78,7 +75,6 @@ class LinkedList<E> {
                     size++;
                     print();
                     thead = head;
-                    // }
                 } else {
                     count++;
                     if (thead.next != null) {
@@ -88,7 +84,6 @@ class LinkedList<E> {
                 }
             } else {
                 throw new IndexOutOfBoundsException();
-                //thead = head;
             }
         } catch (Exception e) {
             System.out.println("Can't insert at this position.");
@@ -149,7 +144,6 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-
         LinkedList li = new LinkedList();
         while (sc.hasNext()) {
             String str1 = sc.nextLine();
