@@ -1,14 +1,10 @@
 Starting audit...
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:45:27: Parameter data should be final. [FinalParameters]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:49: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:55: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:61:26: Parameter index should be final. [FinalParameters]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:61:37: Parameter data should be final. [FinalParameters]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:63:44: ')' is preceded with whitespace. [ParenPad]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:100:14: 'thead' hides a field. [HiddenField]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:107: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:123:24: Parameter head should be final. [FinalParameters]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:123:29: 'head' hides a field. [HiddenField]
-[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:157: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:57: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:65:44: ')' is preceded with whitespace. [ParenPad]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:102:14: 'thead' hides a field. [HiddenField]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:109: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:125:24: Parameter head should be final. [FinalParameters]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:125:29: 'head' hides a field. [HiddenField]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:159: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 7 errors.

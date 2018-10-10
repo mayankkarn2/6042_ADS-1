@@ -42,11 +42,13 @@ class LinkedList<E> {
      *
      * @param      data  The data
      */
-    public void addAtHead(E data) {
+    public void addAtHead(final E data) {
         Node node = new Node();
         node.data = data;
         node.next = head;
-        if (head == null) tail = node;
+        if (head == null) {
+          tail = node;
+        }
         head = node;
         size++;
         print();
@@ -58,7 +60,7 @@ class LinkedList<E> {
      * @param      index  The index
      * @param      data   The data
      */
-    public void insertAt(int index, E data) {
+    public void insertAt(final int index, final E data) {
         try {
             if (index >= 0 && index <= size ) {
                 if (index == 0) {
