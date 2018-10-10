@@ -94,10 +94,10 @@ class LinkedList<E> {
      * prints the linked list.
      */
     public void print() {
-        Node thead = head;
-        while (thead != null && thead.next != null) {
-            System.out.print(thead.data + ", ");
-            thead = thead.next;
+        Node theads = head;
+        while (theads != null && theads.next != null) {
+            System.out.print(theads.data + ", ");
+            theads = thead.next;
         }
         System.out.println(thead.data);
         count = 0;
