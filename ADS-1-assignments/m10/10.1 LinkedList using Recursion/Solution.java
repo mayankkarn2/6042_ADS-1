@@ -16,7 +16,7 @@ class LinkedList<E> {
         Node next;
     }
     private Node head, tail;
-    Node thead = head;
+    private Node thead = head;
     int count = 0;
     int size = 0;
     /**
