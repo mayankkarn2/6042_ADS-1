@@ -8,9 +8,12 @@ class LinkedList<E> {
     /**
      * Class for node.
      */
+    /**
+     * Class for node.
+     */
     private class Node {
-        E data;
-        Node next;
+        private E data;
+        private Node next;
     }
     Node head, tail;
     Node thead = head;
