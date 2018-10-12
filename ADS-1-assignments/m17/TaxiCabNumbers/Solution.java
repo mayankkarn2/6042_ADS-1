@@ -350,8 +350,7 @@ class MinPQ<Key> implements Iterable<Key> {
         HeapIterator() {
             if (comparator == null) {
                 copy = new MinPQ<Key>(size());
-            }
-            else {
+            } else {
                 copy = new MinPQ<Key>(size(), comparator);
             }
             for (int i = 1; i <= n; i++) {
@@ -409,14 +408,14 @@ final class Solution {
         int num = numer;
         int i = 0;
         int res = 0;
-        while(num != 0 && i < list.size()-rep+1){
+        while (num != 0 && i < list.size() - rep + 1){
             ArrayList<CubeSum> sub = new ArrayList<CubeSum>
-            (list.subList(i++, i+rep-1));
+            (list.subList(i++, i + rep - 1));
             HashSet<Integer> set = new HashSet<Integer>();
-            for(CubeSum cs: sub) {
+            for (CubeSum cs: sub) {
                 set.add(cs.getsum());
             }
-            if(set.size() == 1) {
+            if (set.size() == 1) {
                 res = sub.get(0).getsum();
                 num--;
             }
@@ -428,8 +427,8 @@ final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
-        int number = 1000;
+    public static void main(final String[] args) {
+        final int number = 1000;
         Scanner s = new Scanner(System.in);
         ArrayList<CubeSum> cube = new ArrayList<CubeSum>();
         MinPQ<CubeSum> min = new MinPQ<CubeSum>();
@@ -439,8 +438,9 @@ final class Solution {
         while (!min.isEmpty()) {
             CubeSum cs = min.delMin();
             cube.add(cs);
-            if (cs.getj() < number)
+            if (cs.getj() < number) {
                 min.insert(new CubeSum(cs.geti(), cs.getj() + 1));
+            }
         }
         int numer = s.nextInt();
         int repeat = s.nextInt();
