@@ -2,7 +2,6 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.HashSet;
 import java.util.Scanner;
 class CubeSum implements Comparable<CubeSum> {
@@ -10,10 +9,10 @@ class CubeSum implements Comparable<CubeSum> {
     private final int i;
     private final int j;
 
-    public CubeSum(int i, int j) {
-        this.sum = i*i*i + j*j*j;
-        this.i = i;
-        this.j = j;
+    CubeSum(final int ik, final int jk) {
+        this.sum = ik*ik*ik + jk*jk*jk;
+        this.i = ik;
+        this.j = jk;
     }
 
     public int compareTo(CubeSum that) {
