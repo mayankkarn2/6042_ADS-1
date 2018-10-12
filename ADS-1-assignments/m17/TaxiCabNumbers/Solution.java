@@ -182,7 +182,7 @@ class MinPQ<Key> implements Iterable<Key> {
      * @throws NoSuchElementException if this priority queue is empty
      */
     public Key min() {
-        if (isEmpty()) { 
+        if (isEmpty()) {
             throw new NoSuchElementException("Priority queue underflow");
         }
         return pq[1];
@@ -193,7 +193,7 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param      capacity  The capacity
      */
-    private void resize(int capacity) {
+    private void resize(final int capacity) {
         assert capacity > n;
         Key[] temp = (Key[]) new Object[capacity];
         for (int i = 1; i <= n; i++) {
@@ -207,11 +207,11 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param  x the key to add to this priority queue
      */
-    public void insert(Key x) {
+    public void insert(final Key x) {
         // double size of array if necessary
-        if (n == pq.length - 1) resize(2 * pq.length);
-
-        // add x, and percolate it up to maintain heap invariant
+        if (n == pq.length - 1) {
+            resize(2 * pq.length);
+        }
         pq[++n] = x;
         swim(n);
         assert isMinHeap();
@@ -224,13 +224,18 @@ class MinPQ<Key> implements Iterable<Key> {
      * @throws NoSuchElementException if this priority queue is empty
      */
     public Key delMin() {
-        if (isEmpty()) throw new NoSuchElementException(
+        if (isEmpty()) {
+            throw new NoSuchElementException(
             "Priority queue underflow");
+        }
         Key min = pq[1];
         exch(1, n--);
         sink(1);
-        pq[n+1] = null;
-        if ((n > 0) && (n == (pq.length - 1) / 4)) resize(pq.length / 2);
+        pq[n + 1] = null;
+        final int four = 4;
+        if ((n > 0) && (n == (pq.length - 1) / four)) {
+            resize(pq.length / 2);
+        }
         assert isMinHeap();
         return min;
     }
