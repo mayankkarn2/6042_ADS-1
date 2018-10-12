@@ -317,7 +317,7 @@ class MinPQ<Key> implements Iterable<Key> {
         }
         int left = 2 * k;
         int right = 2 * k + 1;
-        if (left  <= n && greater(k, left)) { 
+        if (left  <= n && greater(k, left)) {
             return false;
         }
         if (right <= n && greater(k, right)) {
@@ -340,15 +340,23 @@ class MinPQ<Key> implements Iterable<Key> {
      * Class for heap iterator.
      */
     private class HeapIterator implements Iterator<Key> {
+        /**
+         * Min Priority cube.
+         */
         private MinPQ<Key> copy;
         /**
          * Constructs the object.
          */
-        public HeapIterator() {
-            if (comparator == null) copy = new MinPQ<Key>(size());
-            else                    copy = new MinPQ<Key>(size(), comparator);
-            for (int i = 1; i <= n; i++)
+        HeapIterator() {
+            if (comparator == null) {
+                copy = new MinPQ<Key>(size());
+            }
+            else {
+                copy = new MinPQ<Key>(size(), comparator);
+            }
+            for (int i = 1; i <= n; i++) {
                 copy.insert(pq[i]);
+            }
         }
         /**
          * Determines if it has next.
@@ -380,7 +388,7 @@ class MinPQ<Key> implements Iterable<Key> {
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
@@ -391,7 +399,7 @@ class Solution {
      * Returns the results.
      *
      * @param      list  The list
-     * @param      num   The number
+     * @param      numer   The number
      * @param      rep   The rep
      *
      * @return     Result
