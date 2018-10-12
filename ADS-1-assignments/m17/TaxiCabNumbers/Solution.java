@@ -260,7 +260,7 @@ class MinPQ<Key> implements Iterable<Key> {
         int k = ka;
         while (2 * k <= n) {
             int j = 2 * k;
-            if (j < n && greater(j, j+1)) {
+            if (j < n && greater(j, j + 1)) {
                 j++;
             }
             if (!greater(k, j)) {
@@ -278,21 +278,20 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @return     True or False.
      */
-    private boolean greater(int i, int j) {
+    private boolean greater(final int i, final int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) > 0;
-        }
-        else {
+        } else {
             return comparator.compare(pq[i], pq[j]) > 0;
         }
     }
     /**
-     * Exchanges the two integers
+     * Exchanges the two integers.
      *
      * @param      i     Root
      * @param      j     Child
      */
-    private void exch(int i, int j) {
+    private void exch(final int i, final int j) {
         Key swap = pq[i];
         pq[i] = pq[j];
         pq[j] = swap;
@@ -312,12 +311,18 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @return     True if minimum heap, False otherwise.
      */
-    private boolean isMinHeap(int k) {
-        if (k > n) return true;
-        int left = 2*k;
-        int right = 2*k + 1;
-        if (left  <= n && greater(k, left))  return false;
-        if (right <= n && greater(k, right)) return false;
+    private boolean isMinHeap(final int k) {
+        if (k > n) {
+            return true;
+        }
+        int left = 2 * k;
+        int right = 2 * k + 1;
+        if (left  <= n && greater(k, left)) { 
+            return false;
+        }
+        if (right <= n && greater(k, right)) {
+            return false;
+        }
         return isMinHeap(left) && isMinHeap(right);
     }
     /**
