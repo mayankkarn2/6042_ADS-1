@@ -95,7 +95,7 @@ class MinPQ<Key> implements Iterable<Key> {
      */
     private int n;
     /**
-     * optional comparator
+     * optional comparator.
      */
     private Comparator<Key> comparator;
 
@@ -121,7 +121,7 @@ class MinPQ<Key> implements Iterable<Key> {
      * using the given comparator.
      *
      * @param  initCapacity the initial capacity of this priority queue
-     * @param  comparator the order in which to compare the keys
+     * @param  comparators the order in which to compare the keys
      */
     MinPQ(final int initCapacity, final Comparator<Key> comparators) {
         this.comparator = comparators;
@@ -147,10 +147,12 @@ class MinPQ<Key> implements Iterable<Key> {
     MinPQ(final Key[] keys) {
         n = keys.length;
         pq = (Key[]) new Object[keys.length + 1];
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) {
             pq[i+1] = keys[i];
-        for (int k = n/2; k >= 1; k--)
+        }
+        for (int k = n/2; k >= 1; k--) {
             sink(k);
+        }
         assert isMinHeap();
     }
 
