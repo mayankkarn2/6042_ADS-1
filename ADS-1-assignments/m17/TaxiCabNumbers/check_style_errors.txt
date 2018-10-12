@@ -6,8 +6,6 @@ Starting audit...
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:10:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:12:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:18:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:19:33: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:22:33: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:28:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:31:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:34:5: Missing a Javadoc comment. [JavadocMethod]
@@ -16,14 +14,10 @@ Starting audit...
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:43:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:44:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:45:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:52:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:52:18: Parameter initCapacity should be final. [FinalParameters]
-[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:71:11: Parameter initCapacity should be final. [FinalParameters]
-[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:71:29: Parameter comparator should be final. [FinalParameters]
-[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:71:45: 'comparator' hides a field. [HiddenField]
-[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:82:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:82:18: Parameter comparator should be final. [FinalParameters]
-[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:82:34: 'comparator' hides a field. [HiddenField]
+[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:71:57: 'comparator' hides a field. [HiddenField]
+[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:80:8: Unused @param tag for 'comparator'. [JavadocMethod]
+[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:82:11: Parameter comparators should be final. [FinalParameters]
+[ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:82:27: Expected @param tag for 'comparators'. [JavadocMethod]
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:89: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:93:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:93:18: Parameter keys should be final. [FinalParameters]
@@ -121,4 +115,4 @@ Starting audit...
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:282:22: '500' is a magic number. [MagicNumber]
 [ERROR] E:\6042_ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:292: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 121 errors.
+Checkstyle ends with 115 errors.
