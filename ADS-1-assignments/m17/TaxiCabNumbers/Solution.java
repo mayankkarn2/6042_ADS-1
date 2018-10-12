@@ -263,7 +263,7 @@ class Solution {
         int i = 0;
         int res = 0;
         while(num != 0 && i < list.size()-rep+1){
-            ArrayList<CubeSum> sub = new ArrayList<CubeSum>(list.subList(i--, i+rep-1));
+            ArrayList<CubeSum> sub = new ArrayList<CubeSum>(list.subList(i++, i+rep-1));
             HashSet<Integer> set = new HashSet<Integer>();
             for(CubeSum cs: sub) {
                 set.add(cs.getsum());
@@ -280,7 +280,7 @@ class Solution {
         Scanner s = new Scanner(System.in);
         ArrayList<CubeSum> cube = new ArrayList<CubeSum>();
         MinPQ<CubeSum> min = new MinPQ<CubeSum>();
-        for (int i = 1; i <= number; i++) {
+        for (int i = 1; i < number; i++) {
             min.insert(new CubeSum(i, i));
         }
         while (!min.isEmpty()) {
