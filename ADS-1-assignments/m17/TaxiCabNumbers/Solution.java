@@ -32,7 +32,7 @@ class CubeSum implements Comparable<CubeSum> {
         this.j = jk;
     }
     /**
-     * Compares the sum
+     * Compares the sum.
      *
      * @param      that  The that
      *
@@ -48,7 +48,7 @@ class CubeSum implements Comparable<CubeSum> {
         return 0;
     }
     /**
-     * Gets the number-1
+     * Gets the number-1.
      *
      * @return     integer
      */
@@ -56,7 +56,7 @@ class CubeSum implements Comparable<CubeSum> {
         return this.i;
     }
     /**
-     * Gets the number-2
+     * Gets the number-2.
      *
      * @return     integer
      */
@@ -64,7 +64,7 @@ class CubeSum implements Comparable<CubeSum> {
         return this.j;
     }
     /**
-     * Get the sum
+     * Get the sum.
      *
      * @return     returns sum
      */
@@ -86,9 +86,18 @@ class CubeSum implements Comparable<CubeSum> {
  * @param      <Key>  The key
  */
 class MinPQ<Key> implements Iterable<Key> {
-    private Key[] pq;                    // store items at indices 1 to n
-    private int n;                       // number of items on priority queue
-    private Comparator<Key> comparator;  // optional comparator
+    /**
+     * store items at indices 1 to n.
+     */
+    private Key[] pq;
+    /**
+     * number of items on priority queue.
+     */
+    private int n;
+    /**
+     * optional comparator
+     */
+    private Comparator<Key> comparator;
 
     /**
      * Initializes an empty priority queue with the given initial capacity.
@@ -114,8 +123,8 @@ class MinPQ<Key> implements Iterable<Key> {
      * @param  initCapacity the initial capacity of this priority queue
      * @param  comparator the order in which to compare the keys
      */
-    MinPQ(final int initCapacity, final Comparator<Key> comparator) {
-        this.comparator = comparator;
+    MinPQ(final int initCapacity, final Comparator<Key> comparators) {
+        this.comparator = comparators;
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
@@ -135,7 +144,7 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param  keys the array of keys
      */
-    public MinPQ(Key[] keys) {
+    MinPQ(final Key[] keys) {
         n = keys.length;
         pq = (Key[]) new Object[keys.length + 1];
         for (int i = 0; i < n; i++)
@@ -394,7 +403,7 @@ class Solution {
      * @param      args  The arguments
      */
     public static void main(String[] args) {
-        int number = 500;
+        int number = 1000;
         Scanner s = new Scanner(System.in);
         ArrayList<CubeSum> cube = new ArrayList<CubeSum>();
         MinPQ<CubeSum> min = new MinPQ<CubeSum>();
