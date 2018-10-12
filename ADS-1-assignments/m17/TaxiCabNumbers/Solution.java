@@ -8,8 +8,17 @@ import java.util.Scanner;
  * Class for cube sum.
  */
 class CubeSum implements Comparable<CubeSum> {
+    /**
+     * Sum.
+     */
     private final int sum;
+    /**
+     * Number-1.
+     */
     private final int i;
+    /**
+     * Number-2.
+     */
     private final int j;
     /**
      * Constructs the object.
