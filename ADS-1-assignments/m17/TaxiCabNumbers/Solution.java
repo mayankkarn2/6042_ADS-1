@@ -10,14 +10,18 @@ class CubeSum implements Comparable<CubeSum> {
     private final int j;
 
     CubeSum(final int ik, final int jk) {
-        this.sum = ik*ik*ik + jk*jk*jk;
+        this.sum = ik * ik * ik + jk * jk * jk;
         this.i = ik;
         this.j = jk;
     }
 
-    public int compareTo(CubeSum that) {
-        if (this.sum < that.sum) return -1;
-        if (this.sum > that.sum) return +1;
+    public int compareTo(final CubeSum that) {
+        if (this.sum < that.sum){
+            return -1;
+        }
+        if (this.sum > that.sum){
+            return +1;
+        }
         return 0;
     }
 
@@ -53,7 +57,7 @@ class MinPQ<Key> implements Iterable<Key> {
     /**
      * Initializes an empty priority queue.
      */
-    public MinPQ() {
+    MinPQ() {
         this(1);
     }
 
@@ -64,7 +68,7 @@ class MinPQ<Key> implements Iterable<Key> {
      * @param  initCapacity the initial capacity of this priority queue
      * @param  comparator the order in which to compare the keys
      */
-    public MinPQ(int initCapacity, Comparator<Key> comparator) {
+    MinPQ(int initCapacity, Comparator<Key> comparator) {
         this.comparator = comparator;
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
