@@ -242,26 +242,30 @@ class MinPQ<Key> implements Iterable<Key> {
     /**
      * Move elements uppwards.
      *
-     * @param      k     Root
+     * @param      ka    Root
      */
     private void swim(final int ka) {
         int k = ka;
-        while (k > 1 && greater(k/2, k)) {
-            exch(k, k/2);
-            k = k/2;
+        while (k > 1 && greater(k / 2, k)) {
+            exch(k, k / 2);
+            k = k / 2;
         }
     }
     /**
      * Move element downwards.
      *
-     * @param      k     Root
+     * @param      ka     Root
      */
     private void sink(final int ka) {
         int k = ka;
-        while (2*k <= n) {
-            int j = 2*k;
-            if (j < n && greater(j, j+1)) j++;
-            if (!greater(k, j)) break;
+        while (2 * k <= n) {
+            int j = 2 * k;
+            if (j < n && greater(j, j+1)) {
+                j++;
+            }
+            if (!greater(k, j)) {
+                break;
+            }
             exch(k, j);
             k = j;
         }
