@@ -1,0 +1,45 @@
+The program for the above question is
+
+class Star {
+	static String st = "";
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		String input = s.nextLine();
+		addStar(input);
+	}
+	public static void addStar(String str) {
+		if(str.substring(1).equals("")) {
+			st = st + str.substring(0);
+			System.out.println(st);
+			return;
+		}
+		if(str.charAt(0) == str.charAt(1)) {
+			int len = str.length();
+			st = st + str.substring(0,1) + "*";
+			addStar(str.substring(1,len));
+		}
+		else {
+			int len = str.length();
+			st = st + str.substring(0,1);
+			addStar(str.substring(1,len));
+		}
+	}
+}
+
+Tracing: sample input-->eep;
+
+recurString(sandeep);
+
+
+--> n + recurString(deep);
+				--> d + recurString(eep);
+							--> e + "*" + recurString(ep);
+										--> e + recurString(p);
+												--> p;
+										--> ep;
+							--> e*ep;
+				--> de*ep;
+output = de*ep;
+
+complexity is O(N);
