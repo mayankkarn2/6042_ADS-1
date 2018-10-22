@@ -1,0 +1,408 @@
+########## Testcase 0: Passed ##########
+Expected Output: 
+divya,99,ST
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+riya,83,Open
+Aditya,80,ST
+Ajay,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+shyam,71,ST
+Priyanka,70,Open
+varsha,66,BC
+yash,61,BC
+Abhishek,60,BC
+Ankit,58,BC
+vani,50,Open
+Aishwarya,48,Open
+Manoj,39,SC
+Anjali,38,SC
+Aryan,32,ST
+Shreya,23,SC
+
+divya,99,ST
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Aditya,80,ST
+priya,72,SC
+
+Your Output: 
+divya,99,ST
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+riya,83,Open
+Aditya,80,ST
+Ajay,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+shyam,71,ST
+Priyanka,70,Open
+varsha,66,BC
+yash,61,BC
+Abhishek,60,BC
+Ankit,58,BC
+vani,50,Open
+Aishwarya,48,Open
+Manoj,39,SC
+Anjali,38,SC
+Aryan,32,ST
+Shreya,23,SC
+
+divya,99,ST
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Aditya,80,ST
+priya,72,SC
+
+----------------------------------------
+########## Testcase 1: Passed ##########
+Expected Output: 
+divya,99,ST
+Ishita,99,Open
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+mahesh,87,Open
+riya,83,Open
+Aditya,80,ST
+Ajay,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+shyam,71,ST
+ROHIT,70,SC
+Amit,70,Open
+Priyanka,70,Open
+Tanya,66,BC
+varsha,66,BC
+yash,61,BC
+Abhishek,60,BC
+Ankit,58,BC
+Gayatri,58,SC
+vani,50,Open
+Sneha,50,SC
+Aishwarya,48,Open
+Manoj,39,SC
+Anjali,38,SC
+Aryan,32,ST
+Shreya,23,SC
+
+divya,99,ST
+Ishita,99,Open
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+Aditya,80,ST
+priya,72,SC
+
+Your Output: 
+divya,99,ST
+Ishita,99,Open
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+mahesh,87,Open
+riya,83,Open
+Aditya,80,ST
+Ajay,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+shyam,71,ST
+ROHIT,70,SC
+Amit,70,Open
+Priyanka,70,Open
+Tanya,66,BC
+varsha,66,BC
+yash,61,BC
+Abhishek,60,BC
+Ankit,58,BC
+Gayatri,58,SC
+vani,50,Open
+Sneha,50,SC
+Aishwarya,48,Open
+Manoj,39,SC
+Anjali,38,SC
+Aryan,32,ST
+Shreya,23,SC
+
+divya,99,ST
+Ishita,99,Open
+Deepak,98,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+Aditya,80,ST
+priya,72,SC
+
+----------------------------------------
+########## Testcase 2: Passed ##########
+Expected Output: 
+divya,99,Open
+tanvi,90,Open
+Aditya,80,ST
+priya,76,SC
+Ajay,76,Open
+rahul,73,Open
+Amit,70,Open
+Priyanka,70,Open
+Tanya,66,BC
+Abhishek,60,BC
+
+divya,99,Open
+Aditya,80,ST
+priya,76,SC
+
+Your Output: 
+divya,99,Open
+tanvi,90,Open
+Aditya,80,ST
+priya,76,SC
+Ajay,76,Open
+rahul,73,Open
+Amit,70,Open
+Priyanka,70,Open
+Tanya,66,BC
+Abhishek,60,BC
+
+divya,99,Open
+Aditya,80,ST
+priya,76,SC
+
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+divya,99,Open
+tanvi,90,ST
+Aditya,80,Open
+priya,76,SC
+Ajay,76,Open
+rahul,73,Open
+Amit,70,Open
+Priyanka,70,Open
+Tanya,66,BC
+Abhishek,60,BC
+
+divya,99,Open
+tanvi,90,ST
+Aditya,80,Open
+priya,76,SC
+Ajay,76,Open
+Tanya,66,BC
+
+Your Output: 
+divya,99,Open
+tanvi,90,ST
+Aditya,80,Open
+priya,76,SC
+Ajay,76,Open
+rahul,73,Open
+Amit,70,Open
+Priyanka,70,Open
+Tanya,66,BC
+Abhishek,60,BC
+
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:64)
+
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+divya,99,Open
+tanvi,99,Open
+Ishita,99,Open
+Deepak,98,Open
+Ira,93,Open
+Raj,87,Open
+mahesh,87,Open
+riya,83,Open
+Aditya,80,Open
+priya,76,Open
+Ajay,76,Open
+Amit,76,Open
+Arjun,75,Open
+rahul,73,Open
+Tanya,72,Open
+ROHIT,70,Open
+Priyanka,70,Open
+varsha,66,Open
+yash,61,Open
+Abhishek,60,Open
+Ankit,58,Open
+Gayatri,58,Open
+vani,50,Open
+Sneha,50,Open
+Aishwarya,48,Open
+Manoj,39,Open
+Anjali,38,Open
+Aryan,32,Open
+shyam,23,Open
+Shreya,23,Open
+
+divya,99,Open
+tanvi,99,Open
+Ishita,99,Open
+Deepak,98,Open
+Ira,93,Open
+Raj,87,Open
+mahesh,87,Open
+riya,83,Open
+Aditya,80,Open
+priya,76,Open
+Ajay,76,Open
+Amit,76,Open
+Arjun,75,Open
+
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at Storage.meritOrder(Storage.java:33)
+	at Solution.main(Solution.java:34)
+
+----------------------------------------
+########## Testcase 5: Failed ##########
+Expected Output: 
+divya,99,ST
+Deepak,99,Open
+Ishita,99,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+mahesh,87,BC
+riya,83,Open
+Aditya,80,ST
+Ajay,76,Open
+Amit,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+shyam,71,ST
+ROHIT,70,SC
+Priyanka,70,Open
+Tanya,66,SC
+varsha,66,BC
+yash,61,Open
+Abhishek,60,SC
+Ankit,58,SC
+Gayatri,58,SC
+vani,50,Open
+Sneha,50,SC
+Aishwarya,48,Open
+Anjali,38,SC
+Manoj,32,SC
+Aryan,32,ST
+Shreya,23,SC
+
+divya,99,ST
+Deepak,99,Open
+Ishita,99,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+mahesh,87,BC
+riya,83,Open
+Aditya,80,ST
+Ajay,76,Open
+Amit,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+varsha,66,BC
+
+Your Output: 
+divya,99,ST
+Ishita,99,Open
+Deepak,99,Open
+Ira,93,ST
+tanvi,90,BC
+Raj,87,BC
+mahesh,87,BC
+riya,83,Open
+Aditya,80,ST
+Amit,76,Open
+Ajay,76,Open
+Arjun,75,Open
+rahul,73,Open
+priya,72,SC
+shyam,71,ST
+ROHIT,70,SC
+Priyanka,70,Open
+Tanya,66,SC
+varsha,66,BC
+yash,61,Open
+Abhishek,60,SC
+Ankit,58,SC
+Gayatri,58,SC
+vani,50,Open
+Sneha,50,SC
+Aishwarya,48,Open
+Anjali,38,SC
+Manoj,32,SC
+Aryan,32,ST
+Shreya,23,SC
+
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:46)
+
+----------------------------------------
+Result: 3/6 testcases passed.
+Starting audit...
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:28:22: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:31: Line is longer than 80 characters (found 164). [LineLength]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:31:63: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:31:72: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:31:99: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:31:122: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:31:126: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:31:149: '4' is a magic number. [MagicNumber]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:31:160: '6' is a magic number. [MagicNumber]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:38:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:44:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:45: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:45:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:46: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:46:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:53:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:54: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:54:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:55: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:55:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:62:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:63: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:63:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:64: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:64:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:71:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:72:28: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:72:38: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:72:39: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:73: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:73:35: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:80:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:81:61: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:81:62: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:82:62: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Lenovo\Desktop\Git Repo\6042_ADS-1\ADS-1-assignments\m12\Assignment-1\Solution.java:82:63: '+' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 39 errors.
+
+
+[master 8dd4b78] "check_style_score -> 3 of 6 passed. style score: 0/1 "
+ 2 files changed, 15 insertions(+), 1 deletion(-)
+
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
