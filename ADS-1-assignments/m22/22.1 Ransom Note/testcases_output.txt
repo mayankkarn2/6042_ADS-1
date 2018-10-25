@@ -1,48 +1,36 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 Yes
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3173137
-	at HashTable.put(Solution.java:36)
-	at Solution.main(Solution.java:71)
+Yes
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 No
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 115276
-	at HashTable.put(Solution.java:36)
-	at Solution.main(Solution.java:71)
+No
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 No
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 104664
-	at HashTable.put(Solution.java:36)
-	at Solution.main(Solution.java:71)
+No
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 No
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3794
-	at HashTable.put(Solution.java:36)
-	at Solution.main(Solution.java:71)
+No
 ----------------------------------------
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 Yes
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 104
-	at HashTable.put(Solution.java:36)
-	at Solution.main(Solution.java:71)
+Yes
 ----------------------------------------
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 Yes
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 92568867
-	at HashTable.put(Solution.java:36)
-	at Solution.main(Solution.java:71)
+Yes
 ----------------------------------------

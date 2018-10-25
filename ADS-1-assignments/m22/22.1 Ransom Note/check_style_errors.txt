@@ -13,6 +13,7 @@ Starting audit...
 [ERROR] E:\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:24:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:25:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:28:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:29:32: '0x7fffffff' is a magic number. [MagicNumber]
 [ERROR] E:\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:31:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:34:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:47:5: Missing a Javadoc comment. [JavadocMethod]
@@ -20,4 +21,4 @@ Starting audit...
 [ERROR] E:\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:61:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] E:\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:62:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 21 errors.

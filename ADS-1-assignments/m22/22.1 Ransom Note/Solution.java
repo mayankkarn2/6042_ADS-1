@@ -26,7 +26,7 @@ class HashTable {
         st = new Node[s];
     }
     int hash(final String k) {
-        return (k.hashCode());
+        return (k.hashCode() & 0x7fffffff) % s;
     }
     public void resize() {
         st = Arrays.copyOf(st, 2 * s);
