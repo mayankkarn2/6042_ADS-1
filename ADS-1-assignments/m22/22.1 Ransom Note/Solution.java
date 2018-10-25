@@ -105,7 +105,7 @@ class HashTable {
         st[i] = new Node(k, v, st[i]);
     }
     /**
-     * Gets the word from HashTable. 
+     * Gets the word from HashTable.
      *
      * @param      k     Word.
      *
@@ -126,11 +126,17 @@ class HashTable {
     }
 }
 /**
- * Class for Solution
+ * Class for Solution.
  */
 final class Solution {
 	/**
-	 * Main method
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//Nothing happens here.
+	}
+	/**
+	 * Main method.
 	 *
 	 * @param      args  The arguments
 	 */
