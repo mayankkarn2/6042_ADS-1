@@ -4,13 +4,13 @@ import java.util.Arrays;
  * Class for hash table.
  */
 class HashTable {
-	/**
-	 * Class for node.
-	 */
+    /**
+     * Class for node.
+     */
     class Node {
-    	/**
-    	 * Word as key.
-    	 */
+        /**
+         * Word as key.
+         */
         private String key;
         /**
          * Count of the word.
@@ -79,7 +79,7 @@ class HashTable {
      * @return     Returns the hash code.
      */
     int hash(final String k) {
-    	final int con = 0x7fffffff;
+        final int con = 0x7fffffff;
         return (k.hashCode() & con) % s;
     }
     /**
@@ -132,17 +132,17 @@ class HashTable {
  * Class for Solution.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		//Nothing happens here.
-	}
-	/**
-	 * Main method.
-	 *
-	 * @param      args  The arguments
-	 */
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Nothing happens here.
+    }
+    /**
+     * Main method.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int m = sc.nextInt();
