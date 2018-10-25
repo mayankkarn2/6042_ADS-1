@@ -1,6 +1,5 @@
 Starting audit...
 [ERROR] E:\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:68:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 2 errors.

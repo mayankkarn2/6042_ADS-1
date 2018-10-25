@@ -65,6 +65,9 @@ class HashTable {
      * Size of the array.
      */
     private int s = (2 * (2 + 2 + 1)) * (2 * (2 + 2 + 1));
+    /**
+     * Constructs the object.
+     */
     HashTable() {
         st = new Node[s];
     }
