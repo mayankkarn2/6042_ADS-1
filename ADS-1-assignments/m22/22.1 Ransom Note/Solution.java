@@ -33,7 +33,7 @@ class HashTable {
             this.next = n;
         }
         /**
-         * Gives the key
+         * Gives the key.
          *
          * @return     key.
          */
@@ -76,7 +76,8 @@ class HashTable {
      * @return     Returns the hash code.
      */
     int hash(final String k) {
-        return (k.hashCode() & 0x7fffffff) % s;
+    	final int con = 0x7fffffff;
+        return (k.hashCode() & con) % s;
     }
     /**
      * Resizes the array.
