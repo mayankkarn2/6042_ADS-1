@@ -37,10 +37,16 @@ class Solution {
 			switch(inputs[2]) {
 				case "1":
 				Student s = (hm.get(inputs[1]));
+				if(s == null) {
+					System.out.println("Student doesn't exists...");
+				}
 				System.out.println(s.getName());
 				break;
 				case "2":
 				Student st = hm.get(inputs[1]);
+				if(st == null) {
+					System.out.println("Student doesn't exists...");
+				}
 				System.out.println(st.getMarks());
 			}
 		}
