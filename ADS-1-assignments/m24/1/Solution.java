@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.util.HashMap; 
-import java.util.Map;
 /**
  * Class for student.
  */
@@ -14,7 +13,7 @@ class Student {
 	 */
 	private String name;
 	/**
-	 * Marks
+	 * Marks.
 	 */
 	private Double marks;
 	/**
@@ -24,10 +23,10 @@ class Student {
 	 * @param      name    The name
 	 * @param      marks   The marks
 	 */
-	Student(final String rollNo, final String name, final Double marks) {
-		this.rollNo = rollNo;
-		this.name = name;
-		this.marks = marks;
+	Student(final String r, final String n, final Double m) {
+		this.rollNo = r;
+		this.name = n;
+		this.marks = m;
 	}
 	/**
 	 * Gets the roll no.
@@ -69,7 +68,7 @@ final class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int m = sc.nextInt();
 		HashMap<String,Student> hm = new HashMap<String,Student>();
