@@ -1,26 +1,74 @@
 import java.util.Scanner;
 import java.util.HashMap; 
 import java.util.Map;
+/**
+ * Class for student.
+ */
 class Student {
+	/**
+	 * Roll No.
+	 */
 	private String rollNo;
+	/**
+	 * Name.
+	 */
 	private String name;
-	private String marks;
-	Student(String rollNo, String name, String marks) {
+	/**
+	 * Marks
+	 */
+	private Double marks;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      rollNo  The roll no
+	 * @param      name    The name
+	 * @param      marks   The marks
+	 */
+	Student(final String rollNo, final String name, final Double marks) {
 		this.rollNo = rollNo;
 		this.name = name;
 		this.marks = marks;
 	}
+	/**
+	 * Gets the roll no.
+	 *
+	 * @return     The roll no.
+	 */
 	public String getRollNo() {
 		return rollNo;
 	}
+	/**
+	 * Gets the name.
+	 *
+	 * @return     The name.
+	 */
 	public String getName() {
 		return name;
 	}
-	public String getMarks() {
+	/**
+	 * Gets the marks.
+	 *
+	 * @return     The marks.
+	 */
+	public Double getMarks() {
 		return marks;
 	}
 }
-class Solution {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//Nothing happens here.
+	}
+	/**
+	 * The main function.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int m = sc.nextInt();
@@ -28,7 +76,7 @@ class Solution {
 		sc.nextLine();
 		for(int i = 0; i < m; i++) {
 			String[] inputs = sc.nextLine().split(",");
-			hm.put(inputs[0], new Student(inputs[0],inputs[1],inputs[2]));
+			hm.put(inputs[0], new Student(inputs[0],inputs[1],Double.valueOf(inputs[2])));
 		}
 		int n = sc.nextInt();
 		sc.nextLine();
