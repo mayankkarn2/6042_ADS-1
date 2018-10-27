@@ -39,6 +39,7 @@ class Solution {
 				Student s = (hm.get(inputs[1]));
 				if(s == null) {
 					System.out.println("Student doesn't exists...");
+					break;
 				}
 				System.out.println(s.getName());
 				break;
@@ -46,8 +47,10 @@ class Solution {
 				Student st = hm.get(inputs[1]);
 				if(st == null) {
 					System.out.println("Student doesn't exists...");
+					break;
 				}
 				System.out.println(st.getMarks());
+				break;
 			}
 		}
 	}
