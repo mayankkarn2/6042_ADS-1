@@ -1,9 +1,4 @@
 Starting audit...
 [ERROR] E:\ADS-1\ADS-1-assignments\m24\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS-1\ADS-1-assignments\m24\1\Solution.java:2: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS-1\ADS-1-assignments\m24\1\Solution.java:76:12: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS-1\ADS-1-assignments\m24\1\Solution.java:78:53: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS-1\ADS-1-assignments\m24\1\Solution.java:85:19: 'switch' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS-1\ADS-1-assignments\m24\1\Solution.java:98:21: '(' should be on the previous line. [MethodParamPad]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
