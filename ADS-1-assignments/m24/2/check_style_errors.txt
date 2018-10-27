@@ -1,0 +1,13 @@
+Starting audit...
+[ERROR] E:\ADS-1\ADS-1-assignments\m24\2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\ADS-1\ADS-1-assignments\m24\2\Solution.java:55: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\ADS-1\ADS-1-assignments\m24\2\Solution.java:70: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] E:\ADS-1\ADS-1-assignments\m24\2\Solution.java:78:5: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] E:\ADS-1\ADS-1-assignments\m24\2\Solution.java:79:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS-1\ADS-1-assignments\m24\2\Solution.java:81: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] E:\ADS-1\ADS-1-assignments\m24\2\Solution.java:81:23: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS-1\ADS-1-assignments\m24\2\Solution.java:83: Line is longer than 80 characters (found 106). [LineLength]
+[ERROR] E:\ADS-1\ADS-1-assignments\m24\2\Solution.java:83:80: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\ADS-1\ADS-1-assignments\m24\2\Solution.java:84:28: 'for' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 10 errors.
