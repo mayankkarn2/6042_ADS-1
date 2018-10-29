@@ -67,12 +67,12 @@ class BinarySearchT<Key extends Comparable<Key>, Values> {
         int cmp = key.compareTo(node.key);
         if (cmp < 0) {
             node.left = put(node.left, key, value);
-        } else if (cmp < 0) {
+        } else if (cmp > 0) {
             node.right = put(node.right, key, value);
         } else {
             node.value = value;
         }
-        node.size = 1 + size(node.left) - size(node.right);
+        node.size = 1 + size(node.left) + size(node.right);
         return node;
     }
 
@@ -87,7 +87,7 @@ class BinarySearchT<Key extends Comparable<Key>, Values> {
         int cmp = key.compareTo(node.key);
         if (cmp < 0) {
             return get(node.left, key);
-        } else if (cmp < 0) {
+        } else if (cmp > 0) {
             return get(node.right, key);
         } else {
             return node.value;
@@ -102,7 +102,7 @@ class BinarySearchT<Key extends Comparable<Key>, Values> {
         if (node.left == null) {
             return node;
         } else {
-            return min(node.right);
+            return min(node.left);
         }
     }
 
@@ -269,7 +269,6 @@ final class Solution {
     private Solution() {
 
     }
-
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         BinarySearchT<Book, Integer> obj = new BinarySearchT<>();

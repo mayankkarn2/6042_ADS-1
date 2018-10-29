@@ -42,6 +42,6 @@ Starting audit...
 [ERROR] E:\ADS-1\ADS-1-assignments\m20\20.1 BST\Solution.java:238:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS-1\ADS-1-assignments\m20\20.1 BST\Solution.java:267: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\ADS-1\ADS-1-assignments\m20\20.1 BST\Solution.java:269:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS-1\ADS-1-assignments\m20\20.1 BST\Solution.java:273:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS-1\ADS-1-assignments\m20\20.1 BST\Solution.java:272:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
 Checkstyle ends with 44 errors.
