@@ -1,16 +1,13 @@
 Starting audit...
 [ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:100:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:102:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:104:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:112:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:114:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:118:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:122:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:137:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:141:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:155: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:157:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:161:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:121:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:123:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:127:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:131:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:146:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:150:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:164: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:166:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS-1\ADS-1-assignments\m16\16.1 BST\Solution.java:170:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 10 errors.

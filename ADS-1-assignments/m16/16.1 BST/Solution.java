@@ -96,11 +96,20 @@ class BinarySearchTree {
          * Value of book.
          */
         private Integer value;
-
+        /**
+         * Left link of tree.
+         */
         private Node left;
-
+        /**
+         * Right link of tree.
+         */
         private Node right;
-
+        /**
+         * Constructs the object.
+         *
+         * @param      k     Book.
+         * @param      v     Value.
+         */
         Node(final Book k, final Integer v) {
             this.key = k;
             this.value = v;
