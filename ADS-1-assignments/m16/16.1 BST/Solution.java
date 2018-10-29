@@ -117,17 +117,34 @@ class BinarySearchTree {
             this.right = null;
         }
     }
-
+    /**
+     * Root node of tree.
+     */
     private Node root;
-
+    /**
+     * Constructs the object.
+     */
     BinarySearchTree() {
         root = null;
     }
-
+    /**
+     * Puts the book in the tree.
+     *
+     * @param      key    The key
+     * @param      value  The value
+     */
     public void put(final Book key, final Integer value) {
         root = put(root, key, value);
     }
-
+    /**
+     * Helper function for put.
+     *
+     * @param      x      { parameter_description }
+     * @param      key    The key
+     * @param      value  The value
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node put(final Node x, final Book key, final Integer value) {
         if (x == null) {
             return new Node(key, value);
@@ -142,11 +159,24 @@ class BinarySearchTree {
         }
         return x;
     }
-
+    /**
+     * Gets the node from BST.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Integer get(final Book key) {
         return get(root, key);
     }
-
+    /**
+     * Helper function for get.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Integer get(final Node x, final Book key) {
         if (x == null) {
             return null;
@@ -160,13 +190,21 @@ class BinarySearchTree {
         return x.value;
     }
 }
-
+/**
+ * Class for Solution.
+ */
 final class Solution {
-
+    /**
+     * Constructs the object.
+     */
     private Solution() {
-
+        //Nothing happens here.
     }
-
+    /**
+     * The main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         BinarySearchTree bst = new BinarySearchTree();
