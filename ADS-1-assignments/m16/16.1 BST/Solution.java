@@ -43,11 +43,21 @@ class Book {
     String getauthor() {
         return this.author;
     }
-
+    /**
+     * Price of the book.
+     *
+     * @return     Price of the book.
+     */
     Double getprice() {
         return this.price;
     }
-
+    /**
+     * Compares this book with that book.
+     *
+     * @param      that  The that
+     *
+     * @return     { description_of_the_return_value }
+     */
     int compareTo(final Book that) {
         if (this.name.compareTo(that.name) > 0) {
             return 1;
@@ -70,13 +80,21 @@ class Book {
         }
     }
 }
-
+/**
+ * Class for binary search tree.
+ */
 class BinarySearchTree {
-
+    /**
+     * Class for node.
+     */
     class Node {
-
+        /**
+         * Book variable.
+         */
         private Book key;
-
+        /**
+         * Value of book.
+         */
         private Integer value;
 
         private Node left;
