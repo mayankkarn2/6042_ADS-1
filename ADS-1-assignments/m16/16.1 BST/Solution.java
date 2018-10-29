@@ -86,7 +86,7 @@ class BinarySearchTree {
         int cmp = key.compareTo(x.key);
         if (cmp < 0) {
             x.left = put(x.left, key, value);
-        } else if (cmp < 0) {
+        } else if (cmp > 0) {
             x.right = put(x.right, key, value);
         } else {
             x.value = value;
@@ -115,7 +115,7 @@ class BinarySearchTree {
 final class Solution {
 
     private Solution() {
-
+        
     }
 
     public static void main(final String[] args) {
