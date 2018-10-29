@@ -27,11 +27,19 @@ class Book {
         this.author = a;
         this.price = p;
     }
-
+    /**
+     * Gets the name.
+     *
+     * @return     book name.
+     */
     String getname() {
         return this.name;
     }
-
+    /**
+     * Author of the book.
+     *
+     * @return     Author of book.
+     */
     String getauthor() {
         return this.author;
     }
