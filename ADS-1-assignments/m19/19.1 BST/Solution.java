@@ -393,7 +393,6 @@ class BinarySearchTree {
         else              return size(x.left);
     }
 }
-
 /**
  * solution.
  */
