@@ -15,7 +15,13 @@ class Book {
      * Price of the book.
      */
     private Double price;
-    
+    /**
+     * Constructs the object.
+     *
+     * @param      n     name of book.
+     * @param      a     author of book.
+     * @param      p     price of book.
+     */
     Book(final String n, final String a, final Double p) {
         this.name = n;
         this.author = a;
