@@ -1,13 +1,21 @@
 import java.util.Scanner;
-
+/**
+ * Class for book.
+ */
 class Book {
-
+    /**
+     * Name of book.
+     */
     private String name;
-
+    /**
+     * Author of book.
+     */
     private String author;
-
+    /**
+     * Price of the book.
+     */
     private Double price;
-
+    
     Book(final String n, final String a, final Double p) {
         this.name = n;
         this.author = a;
@@ -115,7 +123,7 @@ class BinarySearchTree {
 final class Solution {
 
     private Solution() {
-        
+
     }
 
     public static void main(final String[] args) {
